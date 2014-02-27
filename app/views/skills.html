@@ -3,134 +3,20 @@
     <div class="col-md-12">
 
         <div class="panel panel-default">
-            <div class="panel-heading">
-                <div class="panel-heading"><strong>Compétences</strong></div>
-            </div>
-        </div>
+            <div class="panel-heading panel-heading-overflow">
 
-        <div class="panel panel-default">
-            <div class="panel-body">
+                <strong>Compétences</strong>
 
-                <p><i class="glyphicon glyphicon-arrow-down"></i><strong>Environnements</strong></p>
-
-                <h4><small>Systèmes</small></h4>
-                <p>Linux Debian/Ubuntu, Windows</p>
-
-                <h4><small>Langages</small></h4>
-                <p>Bash, perl</p>
-
-                <h4><small>Protocoles</small></h4>
-                <p>http, ftp, DNS, TLS</p>
-
-                <h4><small>Serveurs web</small></h4>
-                <p>Apache, Tomcat</p>
-
-                <h4><small>PaaS</small></h4>
-                <p>Plate forme Heroku <a href="https://www.heroku.com/" title="www.heroku.com" target="_blank">
-                    <i class="glyphicon glyphicon-home"></i>
-                </a></p>
+                <div class="btn-group btn-group-sm pull-right">
+                    <button type="button" class="btn btn-default" title="Légende" ng-click="displaySkillLegend()">
+                        <span class="glyphicon glyphicon-info-sign"></span>
+                    </button>
+                </div>
 
             </div>
         </div>
 
-        <div class="panel panel-default">
-            <div class="panel-body">
-
-                <p><i class="glyphicon glyphicon-arrow-down"></i><strong>Bases de données</strong></p>
-
-                <h4><small>Types</small></h4>
-                <p>Modèle relationnel</p>
-
-                <h4><small>Langages</small></h4>
-                <p>SQL, jPQL</p>
-
-                <h4><small>Outils</small></h4>
-                <p>MySQL Workbench, Dia</p>
-
-                <h4><small>SGBD</small></h4>
-                <p>MySQL, HyperFileSQL</p>
-
-            </div>
-        </div>
-
-        <div class="panel panel-default">
-            <div class="panel-body">
-
-                <p><i class="glyphicon glyphicon-arrow-down"></i><strong>Backend</strong></p>
-
-                <h4><small>Langages</small></h4>
-                <p>Java</p>
-
-                <h4><small>Outils</small></h4>
-                <p>IntelliJ, Eclipse</p>
-
-                <h4><small>Frameworks</small></h4>
-                <p>Play!, Google Guice</p>
-
-                <h4><small>API & Librairies</small></h4>
-                <p>Apache Commons, Javamail, BouncyCastle, Jackson, JPA</p>
-
-                <h4><small>Tests</small></h4>
-                <p>JUnit, Mockito</p>
-
-            </div>
-        </div>
-
-        <div class="panel panel-default">
-            <div class="panel-body">
-
-                <p><i class="glyphicon glyphicon-arrow-down"></i><strong>Frontend</strong></p>
-
-                <h4><small>Langages</small></h4>
-                <p>HTML5, CSS, Javascript</p>
-
-                <h4><small>Outils</small></h4>
-                <p>Yeoman, Bower, Grunt</p>
-
-                <h4><small>Frameworks</small></h4>
-                <p>Bootstrap, AngularJs</p>
-
-                <h4><small>Tests</small></h4>
-                <p>Karma, Jasmine, QUnit</p>
-
-            </div>
-        </div>
-
-        <div class="panel panel-default">
-            <div class="panel-body">
-
-                <p><strong>Génie logiciel</strong></p>
-
-                <h4><small>Analyse</small></h4>
-                <p>Merise</p>
-
-                <h4><small>Conception</small></h4>
-                <p>UML, SOA, Injection de dépendances, Design patterns usuels</p>
-
-                <h4><small>Méthodologies</small></h4>
-                <p>
-                    La RACHE <a href="http://www.byatoo.com/la-rache/" title="site web de la R.A.C.H.E." target="_blank">
-                    <i class="glyphicon glyphicon-home"></i></a>,
-                    SCRUM <a href="https://www.scrum.org/" title="www.scrum.org" target="_blank">
-                    <i class="glyphicon glyphicon-home"></i></a>,
-                </p>
-
-            </div>
-        </div>
-
-        <div class="panel panel-default">
-            <div class="panel-body">
-
-                <p><strong>Connaissances métiers</strong></p>
-
-                <h4><small>Domaines métiers</small></h4>
-                <p>Gestion commerciale, gestion de stock, gestion de production, bases en comptabilité</p>
-
-                <h4><small>Normes</small></h4>
-                <p>EDIFACT</p>
-
-            </div>
-        </div>
+        <skill-category-short ng-repeat="skillCategory in skillCategories" skill-category="skillCategory"></skill-category-short>
 
     </div>
 </div>

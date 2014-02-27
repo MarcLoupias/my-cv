@@ -253,10 +253,17 @@ module.exports = function (grunt) {
           src: [
             '*.{ico,png,txt}',
             '.htaccess',
+            'Procfile',
+            'web.js',
+            'data.json',
             '*.html',
             'views/{,*/}*.html',
+            'scripts/**/*',
+            'styles/**/*',
             'bower_components/**/*',
-            'images/{,*/}*.{webp}',
+            'external_dependencies/**/*',
+            //'images/{,*/}*.{webp}',
+            'images/*',
             'fonts/*'
           ]
         }, {
@@ -283,9 +290,9 @@ module.exports = function (grunt) {
         'copy:styles'
       ],
       dist: [
-        'copy:styles',
+        'copy:styles'/*,
         'imagemin',
-        'svgmin'
+        'svgmin'*/
       ]
     },
 
@@ -356,18 +363,18 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'bower-install',
-    'useminPrepare',
+    //'useminPrepare',
     'concurrent:dist',
     'autoprefixer',
-    'concat',
-    'ngmin',
+    //'concat',
+    //'ngmin',
     'copy:dist',
     'cdnify',
-    'cssmin',
-    'uglify',
-    'rev',
-    'usemin',
-    'htmlmin'
+    //'cssmin',
+    //'uglify',
+    //'rev',
+    //'usemin',
+    //'htmlmin'
   ]);
 
   grunt.registerTask('default', [

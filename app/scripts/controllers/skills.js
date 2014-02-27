@@ -1,10 +1,16 @@
 'use strict';
 
 angular.module('myCvApp')
-  .controller('SkillsCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+    .controller('SkillsCtrl', function ($scope, skillsInfosService, dataService) {
+
+        dataService.getJson().then(function (res) {
+                $scope.skillCategories = res.data.skillCategories;
+            }, function() {
+                alert('c la fote a windoze !');
+            }
+        );
+
+        $scope.displaySkillLegend = function () {
+            skillsInfosService.displaySkillsInfos();
+        };
+    });

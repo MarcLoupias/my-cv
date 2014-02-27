@@ -1,9 +1,10 @@
 'use strict';
 
 angular.module('myCvApp')
-    .controller('ExperiencesCtrl', function ($scope, dataService) {
+    .controller('IndexCtrl', function ($scope, dataService) {
         dataService.getJson().then(function (res) {
-                $scope.jobs = res.data.jobs;
+                $scope.gnrlInfos = res.data.generalInformations;
+
             }, function() {
                 alert('c la fote a windoze !');
             }

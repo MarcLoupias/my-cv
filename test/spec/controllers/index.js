@@ -1,17 +1,17 @@
 'use strict';
 
-describe('Controller: SkillsCtrl', function () {
+describe('Controller: IndexCtrl', function () {
 
   // load the controller's module
   beforeEach(module('myCvApp'));
 
-  var SkillsCtrl,
+  var IndexCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    SkillsCtrl = $controller('SkillsCtrl', {
+    IndexCtrl = $controller('IndexCtrl', {
       $scope: scope
     });
   }));

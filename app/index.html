@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="myCvApp">
+  <body ng-app="myCvApp" ng-controller="IndexCtrl">
   <!--[if lt IE 8]>
   <p class="browsehappy">Vous utilisez un navigateur <strong>obsolète</strong>. S'il vous plait <a href="http://browsehappy.com/">mettez à jour votre navigateur</a> pour améliorer votre experience.</p>
   <![endif]-->
@@ -38,7 +38,7 @@
                   <span class="icon-bar"></span>
               </button>
 
-              <a class="navbar-brand" href="#">Développeur web Full Stack</a>
+              <a class="navbar-brand" href="#">{{gnrlInfos.cvTitle}}</a>
 
           </div>
 
@@ -82,7 +82,7 @@
           <div class="col-md-3">
               <div class="panel panel-default">
                   <div class="panel-heading">
-                      <div class="panel-heading"><strong>Marc Loupias</strong></div>
+                      <div class="panel-heading"><strong>{{gnrlInfos.firstname}} {{gnrlInfos.fullname}}</strong></div>
                   </div>
 
               </div>
@@ -95,11 +95,10 @@
 
                       <div class="pull-right">
                           <ul class="list-unstyled">
-                              <li>32 ans</li>
-                              <li>En couple</li>
-                              <li>Paris</li>
-                              <li>France</li>
-                              <li>Permis de conduire</li>
+                              <li>{{gnrlInfos.age}}</li>
+                              <li>{{gnrlInfos.location}}</li>
+                              <li>{{gnrlInfos.drivingLicence}}</li>
+                              <li>{{gnrlInfos.country}}</li>
                           </ul>
                       </div>
 
@@ -110,22 +109,24 @@
                   <div class="panel-body">
                       <div>
                           <span><i class="glyphicon glyphicon-earphone"></i></span>
-                          sur demande par email
+                          {{gnrlInfos.phone}}
                       </div>
                       <div>
                           <span><i class="glyphicon glyphicon-envelope"></i></span>
-                          <a href="mailto:pro@marc-loupias.fr?subject=Concepteur-Développeur Full Stack">pro@marc-loupias.fr</a>
+                          <a href="mailto:{{gnrlInfos.email.mailto}}?subject={{gnrlInfos.email.subject}}">
+                              {{gnrlInfos.email.mailto}}
+                          </a>
                       </div>
                   </div>
               </div>
 
               <div class="panel panel-default">
                   <div class="panel-body">
-                      <a href="https://github.com/MarcLoupias" title="profil GitHub" target="_blank">
+                      <a href="{{gnrlInfos.socialNetworks.github.url}}" title="{{gnrlInfos.socialNetworks.github.urlTitle}}" target="_blank">
                           <i class="icon-large icon-github"></i></a>
-                      <a href="" title="profil linkedin" target="_blank">
+                      <a href="{{gnrlInfos.socialNetworks.linkedin.url}}" title="{{gnrlInfos.socialNetworks.linkedin.urlTitle}}" target="_blank">
                           <i class="icon-large icon-linked-in"></i></a>
-                      <a href="" title="profil viadeo" target="_blank">
+                      <a href="{{gnrlInfos.socialNetworks.viadeo.url}}" title="{{gnrlInfos.socialNetworks.viadeo.urlTitle}}" target="_blank">
                           <i class="icon-large icon-spootify"></i></a>
                   </div>
               </div>
@@ -133,34 +134,13 @@
               <div class="panel panel-default">
                   <div class="panel-body">
                       <span><strong>Situation professionnelle</strong> :</span>
-                      <span class="text-success"><strong>Disponible ASAP</strong></span>
+                      <span class="text-success"><strong>{{gnrlInfos.employmentStatus}}</strong></span>
                   </div>
               </div>
 
               <div class="panel panel-default">
                   <div class="panel-body">
-                      <p>
-                          Après une expérience significative chez un éditeur de logiciel,
-                          j'ai décidé il y a deux ans de changer mon fusil d'épaule en passant du client lourd
-                          au développement web.
-                      </p>
-
-                      <p>
-                          Récemment installé en région parisienne, je cherche aujourd'hui des missions avec les
-                          dernières technologies web, plus particulièrement AngularJs et Bootstrap.
-                      </p>
-
-                      <p>
-                          Les techniques de développement frontend évoluent très vite depuis quelques années.
-                          Les possibilités offertes hier aux seuls clients lourds sont ouvertes au web.
-                          Avec le responsive design de Bootstrap couplé à la puissance d'AngularJs il est désormais
-                          possible de créer des applications de gestion en client léger qui n'ont rien à envier aux
-                          anciennes, et le tout sur n'importe quel périphérique, disponibles n'importe où n'importe quand.
-                      </p>
-
-                      <p>
-                          Je souhaite m'inscrire dans ce mouvement.
-                      </p>
+                      <p ng-repeat="p in gnrlInfos.introduction">{{p.text}}</p>
                   </div>
               </div>
 
@@ -228,6 +208,15 @@
         <script src="scripts/controllers/education.js"></script>
         <script src="scripts/controllers/devfolio.js"></script>
         <script src="scripts/services/skills-infos-service.js"></script>
+        <script src="scripts/directives/experience-short.js"></script>
+        <script src="scripts/directives/experience-full.js"></script>
+        <script src="scripts/directives/skill-group-short.js"></script>
+        <script src="scripts/directives/skill-category-short.js"></script>
+        <script src="scripts/directives/skill-short.js"></script>
+        <script src="scripts/services/skill-badge-helper.js"></script>
+        <script src="scripts/directives/degree.js"></script>
+        <script src="scripts/services/data-service.js"></script>
+        <script src="scripts/controllers/index.js"></script>
         <!-- endbuild -->
 </body>
 </html>
