@@ -5,11 +5,10 @@ angular.module('myCvApp')
 
         var template = '<div class="panel panel-default">';
         template += '       <div class="panel-body">';
+        template += '           <a href="{{job.companyUrl}}" target="_blank"><img src="{{job.logoUrl}}" alt="{{job.companyUrlTitle}}" class="img-rounded pull-right"></a>';
         template += '           <h4><strong>{{job.position}}</strong></h4>';
-        template += '           <h4>{{job.company}} <small>{{job.period}}</small>';
-        template += '               <a href="{{job.companyUrl}}" title="{{job.companyUrlTitle}}" target="_blank">';
-        template += '                   <i class="icon-large icon-link"></i></a>';
-        template += '           </h4>';
+        template += '           <h4>{{job.company}}</h4>';
+        template += '           <h4><small>{{job.period}}</small></h4>';
         template += '           <p>{{job.jobDescription}}</p>';
         template += '       </div>';
         template += '   </div>';

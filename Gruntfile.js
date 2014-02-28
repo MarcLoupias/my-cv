@@ -258,11 +258,11 @@ module.exports = function (grunt) {
             'data.json',
             '*.html',
             'views/{,*/}*.html',
-            'scripts/**/*',
-            'styles/**/*',
+            //'scripts/**/*',
+            //'styles/**/*',
             'bower_components/**/*',
             'external_dependencies/**/*',
-            //'images/{,*/}*.{webp}',
+            /*'images/{,*//*}*.{webp}',*/
             'images/*',
             'fonts/*'
           ]
@@ -363,18 +363,18 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'bower-install',
-    //'useminPrepare',
+    'useminPrepare',
     'concurrent:dist',
     'autoprefixer',
-    //'concat',
-    //'ngmin',
+    'concat',
+    'ngmin',
     'copy:dist',
     'cdnify',
-    //'cssmin',
-    //'uglify',
-    //'rev',
-    //'usemin',
-    //'htmlmin'
+    'cssmin',
+    'uglify',
+    'rev',
+    'usemin',
+    'htmlmin'
   ]);
 
   grunt.registerTask('default', [

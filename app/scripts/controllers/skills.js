@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('myCvApp')
-    .controller('SkillsCtrl', function ($scope, skillsInfosService, dataService) {
+    .controller('SkillsCtrl', ['$scope', 'skillsInfosService', 'dataService', function ($scope, skillsInfosService, dataService) {
 
         dataService.getJson().then(function (res) {
                 $scope.skillCategories = res.data.skillCategories;
@@ -13,4 +13,4 @@ angular.module('myCvApp')
         $scope.displaySkillLegend = function () {
             skillsInfosService.displaySkillsInfos();
         };
-    });
+    }]);

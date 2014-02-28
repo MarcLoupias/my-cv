@@ -1,6 +1,6 @@
 {
   "name": "mycv",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "dependencies": {
       "gzippo": "~0.2.0",
       "express": "~3.4.8"

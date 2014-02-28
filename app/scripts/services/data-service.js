@@ -1,10 +1,10 @@
 'use strict';
 
 angular.module('myCvApp')
-    .factory('dataService', function ($http) {
+    .factory('dataService', ['$http', function ($http) {
         return {
             getJson: function () {
                 return $http.get('data.json');
             }
         };
-    });
+    }]);

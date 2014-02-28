@@ -6,7 +6,7 @@
         "age":"32 ans",
         "location":"Paris",
         "country":"France",
-        "drivingLicence":"Permis de conduire",
+        "drivingLicence":"Permis B",
         "phone":"sur demande par email",
         "email":{
             "mailto":"pro@marc-loupias.fr",
@@ -18,17 +18,17 @@
                 "urlTitle":"profil GitHub"
             },
             "linkedin": {
-                "url":"#",
+                "url":"http://fr.linkedin.com/pub/marc-loupias/91/714/4aa/",
                 "urlTitle":"profil linkedin"
             },
             "viadeo": {
-                "url":"#",
+                "url":"http://www.viadeo.com/fr/profile/marc.loupias",
                 "urlTitle":"profil viadeo"
             }
         },
         "employmentStatus":"Disponible ASAP",
         "introduction":[
-            {"text":"Après une expérience significative chez un éditeur de logiciel, j'ai décidé il y a deux ans de changer mon fusil d'épaule en passant du client lourd au développement web."},
+            {"text":"Après une expérience significative chez un éditeur de logiciel, j'ai décidé il y a deux ans de changer de technologie en passant du client lourd (Windev) au développement web (Java J2EE)."},
             {"text":"Récemment installé en région parisienne, je cherche aujourd'hui des missions avec les dernières technologies web, plus particulièrement AngularJs et Bootstrap."},
             {"text":"Les techniques de développement frontend évoluent très vite depuis quelques années. Les possibilités offertes hier aux seuls clients lourds sont ouvertes au web. Avec le responsive design de Bootstrap couplé à la puissance d'AngularJs il est désormais possible de créer des applications de gestion en client léger qui n'ont rien à envier aux anciennes, et le tout sur n'importe quel périphérique, disponibles n'importe où n'importe quand."},
             {"text":"Je souhaite m'inscrire dans ce mouvement."}
@@ -39,6 +39,7 @@
         {
             "position": "Consultant Java/J2EE web",
             "company": "BK-Consulting, Paris",
+            "logoUrl":"../images/logo-bk.150x83.png",
             "period": "(mai 2013 à nov. 2013)",
             "companyUrl": "http://www.bk-consulting.fr/bk/racine/",
             "companyUrlTitle": "BK Consulting",
@@ -51,6 +52,7 @@
         {
             "position": "Ingénieur logiciel",
             "company": "Scaled Risk, Paris",
+            "logoUrl":"../images/logo-sr.283x45.png",
             "period": "(nov. 2012 à jan. 2013)",
             "companyUrl": "http://www.scaledrisk.com/",
             "companyUrlTitle": "Scaled Risk",
@@ -63,6 +65,7 @@
         {
             "position": "Analyste-programmeur",
             "company": "LOMACO, Figeac (46)",
+            "logoUrl":"../images/logo-lomaco.150x48.jpg",
             "period": "(avril 2006 à avril. 2011)",
             "companyUrl": "http://www.lomaco.fr",
             "companyUrlTitle": "LOMACO S.A.",
@@ -86,7 +89,7 @@
             "skillGroups": [
                 {"name":"Systèmes","skills":[{"name":"Linux Debian/Ubuntu","level":2},{"name":"Windows","level":2}]},
                 {"name":"Langages","skills":[{"name":"Bash","level":1},{"name":"perl","level":1}]},
-                {"name":"Protocoles","skills":[{"name":"http","level":1},{"name":"ftp","level":3},{"name":"DNS","level":2},{"name":"TLS","level":1}]},
+                {"name":"Protocoles","skills":[{"name":"HTTP","level":2},{"name":"FTP","level":3},{"name":"DNS","level":2},{"name":"TLS","level":1}]},
                 {"name":"Serveurs web","skills":[{"name":"Apache","level":2},{"name":"Tomcat","level":1}]},
                 {"name":"PaaS","skills":[{"name":"Plateforme Heroku","level":2,"skillUrl":"https://www.heroku.com/","skillUrlTitle":"www.heroku.com"}]}
             ]
@@ -150,7 +153,7 @@
     
     "degrees":[
         {
-            "name":"Ingénieur systèmes et logiciels",
+            "name":"Ingénieur systèmes et logiciels (Non-obtenu, en cours)",
             "school":"CNAM, Toulouse (31)",
             "period":"(2012)",
             "degreeDescription": [

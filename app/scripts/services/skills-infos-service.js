@@ -1,14 +1,14 @@
 'use strict';
 
 angular.module('myCvApp')
-    .factory('skillsInfosService', function ($modal) {
+    .factory('skillsInfosService', ['$modal', function ($modal) {
 
         return {
             displaySkillsInfos: function () {
 
                 var ModalInstanceCtrl;
 
-                ModalInstanceCtrl = function ($scope, $modalInstance) {
+                ModalInstanceCtrl = ['$scope', '$modalInstance', function ($scope, $modalInstance) {
                     $scope.ok = function () {
                         $modalInstance.close();
                     };
@@ -16,7 +16,7 @@ angular.module('myCvApp')
                     $scope.cancel = function () {
                         $modalInstance.dismiss('cancel');
                     };
-                };
+                }];
 
                 var modalInstance = $modal.open({
                     templateUrl: 'views/modals/skills-infos-service-modal-tpl.html',
@@ -26,4 +26,4 @@ angular.module('myCvApp')
                 return modalInstance.result;
             }
         };
-    });
+    }]);

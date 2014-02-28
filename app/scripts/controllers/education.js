@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('myCvApp')
-    .controller('EducationCtrl', function ($scope, dataService) {
+    .controller('EducationCtrl', ['$scope', 'dataService', function ($scope, dataService) {
 
         dataService.getJson().then(function (res) {
                 $scope.degrees = res.data.degrees;
@@ -9,4 +9,4 @@ angular.module('myCvApp')
                 alert('c la fote a windoze !');
             }
         );
-    });
+    }]);
