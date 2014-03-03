@@ -4,7 +4,7 @@
     <list default="true" id="3f13620d-0bca-4cf4-9b99-79607f1259fe" name="Default" comment="" />
     <ignored path="my-cv.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/README.md" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393403571220" ignored="false" />
+    <file path="/README.md" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393836212785" ignored="false" />
     <file path="/index.html" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393605577330" ignored="false" />
     <file path="/main.html" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393580243787" ignored="false" />
     <file path="/notes" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393430302330" ignored="false" />
@@ -110,10 +110,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="19" selection-start="109" selection-end="109" vertical-scroll-proportion="0.12899263">
+            <state line="3" column="31" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="52" selection-start="377" selection-end="377" vertical-scroll-proportion="0.2948403">
               <folding />
             </state>
           </provider>
@@ -147,7 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/devfolio.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/education.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/experiences.js" />
@@ -163,6 +171,7 @@
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/my-data.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -519,11 +528,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/scripts/directives/skill-group-short.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/directives/skill-short.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -607,7 +611,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="19" selection-start="109" selection-end="109" vertical-scroll-proportion="0.12899263">
+        <state line="3" column="31" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="52" selection-start="377" selection-end="377" vertical-scroll-proportion="0.2948403">
           <folding />
         </state>
       </provider>
