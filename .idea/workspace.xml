@@ -5,22 +5,22 @@
     <ignored path="my-cv.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/README.md" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393836212785" ignored="false" />
-    <file path="/index.html" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393605577330" ignored="false" />
-    <file path="/main.html" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393580243787" ignored="false" />
+    <file path="/index.html" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393867317737" ignored="false" />
+    <file path="/main.html" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393868326887" ignored="false" />
     <file path="/notes" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393430302330" ignored="false" />
     <file path="/main.css" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393441566845" ignored="false" />
     <file path="$PROJECT_DIR$/.tmp/styles/main.css" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393441621460" ignored="false" />
     <file path="/experiences.html" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393496113815" ignored="false" />
     <file path="/education.html" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393514450321" ignored="false" />
     <file path="/skills.html" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393584562279" ignored="false" />
-    <file path="/devfolio.html" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393439293501" ignored="false" />
+    <file path="/devfolio.html" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393935397896" ignored="false" />
     <file path="$PROJECT_DIR$/.tmp/styles/bootstrap.icon-large.css" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393431716251" ignored="false" />
     <file path="/skills-infos-service.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393608672686" ignored="false" />
     <file path="/skills-infos-service-modal-tpl.html" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393581281295" ignored="false" />
     <file path="/main.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393608450683" ignored="false" />
     <file path="/experience-short.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393583539632" ignored="false" />
     <file path="/experience-full.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393583664227" ignored="false" />
-    <file path="/experiences.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393608416681" ignored="false" />
+    <file path="/experiences.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393868466105" ignored="false" />
     <file path="/skill-group-short.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393497616497" ignored="false" />
     <file path="/skill-short.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393579988402" ignored="false" />
     <file path="/skill-category-short.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393497864389" ignored="false" />
@@ -29,18 +29,22 @@
     <file path="/degree.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393513942403" ignored="false" />
     <file path="/education.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393608404518" ignored="false" />
     <file path="/data-service.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393608554845" ignored="false" />
-    <file path="/index.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393608434571" ignored="false" />
+    <file path="/index.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393867285476" ignored="false" />
     <file path="$PROJECT_DIR$/dist/bower_components/jquery/test/data/dashboard.xml" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393607485275" ignored="false" />
     <file path="$PROJECT_DIR$/dist/bower_components/jquery/test/data/with_fries.xml" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393607485275" ignored="false" />
     <file path="/loader.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393527051191" ignored="false" />
     <file path="/app.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393527700664" ignored="false" />
     <file path="/skill-badge-level.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393608531943" ignored="false" />
     <file path="/Gruntfile.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393585152562" ignored="false" />
-    <file path="/devfolio.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393608376659" ignored="false" />
+    <file path="/devfolio.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393933742024" ignored="false" />
     <file path="/skills.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393608475158" ignored="false" />
     <file path="$PROJECT_DIR$/dist/bower_components/angular-scenario/angular-scenario.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393608649334" ignored="false" />
     <file path="$PROJECT_DIR$/.tmp/concat/scripts/scripts.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393608649334" ignored="false" />
-    <file path="/.gitignore" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393835781786" ignored="false" />
+    <file path="/.gitignore" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393933357306" ignored="false" />
+    <file path="/my-data.json" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393934594908" ignored="false" />
+    <file path="/general-infos-panel-helper-service.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393867545155" ignored="false" />
+    <file path="/CHANGELOG.md" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393934751279" ignored="false" />
+    <file path="/devfolio-project.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393935123151" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,22 +114,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/scripts/controllers/education.js" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/experiences.js" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/index.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/main.js" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/skills.js" />
-        <option value="$PROJECT_DIR$/app/scripts/directives/skill-badge-level.js" />
-        <option value="$PROJECT_DIR$/app/scripts/services/data-service.js" />
-        <option value="$PROJECT_DIR$/app/scripts/services/skills-infos-service.js" />
-        <option value="$PROJECT_DIR$/app/package.json" />
-        <option value="$PROJECT_DIR$/app/data.json" />
-        <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/my-data.json" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/experiences.js" />
+        <option value="$PROJECT_DIR$/app/code.google.analytics" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/devfolio.js" />
+        <option value="$PROJECT_DIR$/app/my-data.json" />
+        <option value="$PROJECT_DIR$/CHANGELOG.md" />
+        <option value="$PROJECT_DIR$/app/data.json" />
+        <option value="$PROJECT_DIR$/test/spec/directives/devfolio-project.js" />
+        <option value="$PROJECT_DIR$/app/scripts/directives/devfolio-project.js" />
+        <option value="$PROJECT_DIR$/app/views/devfolio.html" />
+        <option value="$PROJECT_DIR$/app/scripts/services/data-service.js" />
         <option value="$PROJECT_DIR$/dist/package.json" />
+        <option value="$PROJECT_DIR$/dist/my-data.json" />
+        <option value="$PROJECT_DIR$/dist/index.html" />
+        <option value="$PROJECT_DIR$/app/index.html" />
       </list>
     </option>
   </component>
@@ -191,7 +195,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -206,6 +210,72 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-cv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-cv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-cv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-cv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-cv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-cv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -228,11 +298,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dist/images" />
+      <recent name="$PROJECT_DIR$/dist/images/logos" />
+      <recent name="$PROJECT_DIR$/dist" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/images" />
-      <recent name="$PROJECT_DIR$/dist" />
-      <recent name="$PROJECT_DIR$/node_modules" />
-      <recent name="$PROJECT_DIR$/app/external.dependencies" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/dist" />
@@ -358,6 +428,7 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32897863" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -372,7 +443,6 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32897863" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -438,106 +508,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/scripts/directives/skill-short.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/data-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="14" selection-start="231" selection-end="231" vertical-scroll-proportion="0.18427518" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/skill-badge-helper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="19" selection-start="201" selection-end="201" vertical-scroll-proportion="-0.05036855" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="12" selection-start="173" selection-end="173" vertical-scroll-proportion="0.18427518" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/skills-infos-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="37" selection-start="868" selection-end="868" vertical-scroll-proportion="0.534398">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-4.5331697">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="30" selection-start="429" selection-end="429" vertical-scroll-proportion="0.27641279">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitattributes">
+    <entry file="file://$PROJECT_DIR$/app/scripts/directives/skill-category-short.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Procfile">
+    <entry file="file://$PROJECT_DIR$/app/views/skills.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="19" selection-start="39" selection-end="39" vertical-scroll-proportion="0.03797468">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="2" selection-start="1399" selection-end="1399" vertical-scroll-proportion="0.9113924">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="19" selection-start="39" selection-end="39" vertical-scroll-proportion="0.03797468">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="52" selection-start="377" selection-end="377" vertical-scroll-proportion="0.2948403">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="31" selection-start="34" selection-end="34" vertical-scroll-proportion="0.055282556">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
+    <entry file="file://$PROJECT_DIR$/app/scripts/directives/devfolio-project.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="46" selection-start="3853" selection-end="3853" vertical-scroll-proportion="0.42471042">
+        <state line="35" column="13" selection-start="1582" selection-end="1582" vertical-scroll-proportion="0.65543073">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devfolio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="26" selection-start="355" selection-end="355" vertical-scroll-proportion="0.2658228">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/devfolio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="32" selection-start="347" selection-end="347" vertical-scroll-proportion="0.2027027">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="4" selection-start="24" selection-end="24" vertical-scroll-proportion="0.03797468">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/data-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="33" selection-start="234" selection-end="234" vertical-scroll-proportion="0.18427518">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/my-data.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="67" selection-start="3360" selection-end="3360" vertical-scroll-proportion="0.8108108">
+        <state line="21" column="78" selection-start="750" selection-end="750" vertical-scroll-proportion="0.4054054">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="67" selection-start="5268" selection-end="5268" vertical-scroll-proportion="0.28957528">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/my-data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="47" selection-start="2117" selection-end="2117" vertical-scroll-proportion="0.7915058">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="202" column="2" selection-start="7585" selection-end="7585" vertical-scroll-proportion="0.25096524">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code.google.analytics">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

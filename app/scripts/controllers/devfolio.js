@@ -1,10 +1,11 @@
 'use strict';
 
 angular.module('myCvApp')
-  .controller('DevfolioCtrl', ['$scope', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  }]);
+    .controller('DevfolioCtrl', ['$scope', 'dataService', function ($scope, dataService) {
+        dataService.getJson().then(function (res) {
+                $scope.devfolio = res.data.devfolio;
+            }, function() {
+                alert('c la fote a windoze !');
+            }
+        );
+    }]);

@@ -71,5 +71,29 @@
                 {"desc":"degree description 1"}, {"desc":"description 1"}, {"desc":"description ..."}
             ]
         }
+    ],
+
+    "devfolio":[
+        {
+            "name":"Project toto",
+            "deployedProjectUrl":"http://domain.tld/",
+            "deployedProjectUrlTitle":"title",
+            "githubRepoList": [
+                {"repoUrl":"http://domain.tld", "repoUrlTitle":"title"},
+                {"repoUrl":"http://domain.tld", "repoUrlTitle":"title"}
+            ],
+            "description":[
+                {"p":"text wrapped in a p tag"}
+            ],
+            "technos":[
+                {"name":"techno name 1"},{"name":"techno name n"}
+            ],
+            "languages":[
+                {"name":"languages name 1"},{"name":"languages name n"}
+            ],
+            "environment": [
+                {"name":"tool name 1"},{"name":"tool name n"}
+            ]
+        }
     ]
 }

@@ -1,5 +1,78 @@
 
-<div class="row">
+<div class="row visible-xs">
+    <div class="col-xs-12">
+        <div class="well">
+            <p ng-repeat="p in gnrlInfos.introduction">{{p.text}}</p>
+        </div>
+    </div>
+</div>
+
+<div class="row visible-xs">
+
+    <div class="col-xs-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="panel-heading"><strong>{{gnrlInfos.firstname}} {{gnrlInfos.fullname}}</strong></div>
+            </div>
+
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="pull-left">
+                    <img src="{{gnrlInfos.photoUrl}}" class="img-rounded">
+                </div>
+
+                <div class="pull-right">
+                    <ul class="list-unstyled">
+                        <li>{{gnrlInfos.age}}</li>
+                        <li>{{gnrlInfos.location}}</li>
+                        <li>{{gnrlInfos.drivingLicence}}</li>
+                        <li>{{gnrlInfos.country}}</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div>
+                    <span><i class="glyphicon glyphicon-earphone"></i></span>
+                    {{gnrlInfos.phone}}
+                </div>
+                <div>
+                    <span><i class="glyphicon glyphicon-envelope"></i></span>
+                    <a href="mailto:{{gnrlInfos.email.mailto}}?subject={{gnrlInfos.email.subject}}">
+                        {{gnrlInfos.email.mailto}}
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <a href="{{gnrlInfos.socialNetworks.github.url}}" title="{{gnrlInfos.socialNetworks.github.urlTitle}}" target="_blank">
+                    <i class="icon-large icon-github"></i></a>
+                <a href="{{gnrlInfos.socialNetworks.linkedin.url}}" title="{{gnrlInfos.socialNetworks.linkedin.urlTitle}}" target="_blank">
+                    <i class="icon-large icon-linked-in"></i></a>
+                <a href="{{gnrlInfos.socialNetworks.viadeo.url}}" title="{{gnrlInfos.socialNetworks.viadeo.urlTitle}}" target="_blank">
+                    <i class="icon-large icon-spootify"></i></a>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <span><strong>Situation professionnelle</strong> :</span>
+                <span class="text-success"><strong>{{gnrlInfos.employmentStatus}}</strong></span>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="row hidden-xs">
 
     <div class="col-md-6">
 
