@@ -2,22 +2,58 @@
 
 describe('Controller: DevfolioCtrl', function () {
 
-  // load the controller's module
-  beforeEach(module('myCvApp'));
+    var DevfolioCtrl,
+        dataService,
+        q,
+        deferred,
+        scope;
 
-  var DevfolioCtrl,
-    scope;
+    // load the controller's module
+    beforeEach(
+        module('myCvApp', function() {
 
-  // Initialize the controller and a mock scope
-  beforeEach(inject(function ($controller, $rootScope) {
-    scope = $rootScope.$new();
-    DevfolioCtrl = $controller('DevfolioCtrl', {
-      $scope: scope
+            dataService = {
+                getJson: function() {
+                    deferred = q.defer();
+                    return deferred.promise;
+                }
+            };
+        })
+    );
+
+    // Initialize the controller and a mock scope
+    beforeEach(inject(function ($controller, $rootScope, $q) {
+
+        scope = $rootScope.$new();
+        q = $q;
+        DevfolioCtrl = $controller('DevfolioCtrl', {
+            $scope: scope,
+            dataService:dataService
+        });
+    }));
+
+    it('should load data from dataService then attach data.devfolio to the scope', function () {
+
+        expect(true).toBe(true);
+
+        var testData = {
+            "data": {
+                "devfolio":[
+                    {
+                        "name":"project",
+                        "deployedProjectUrl":"http://poc-angular-frontend.herokuapp.com/",
+                        "deployedProjectUrlTitle":"visiter la version déployée"
+                    }
+                ]
+            }
+        };
+
+        deferred.resolve(testData);
+
+        scope.$root.$digest();
+
+        expect(scope.devfolio).toBeDefined();
+        expect(scope.devfolio).not.toBeNull();
+        expect(scope.devfolio[0].name).toEqual('project');
     });
-  }));
-
-  it('should attach a list of awesomeThings to the scope', function () {
-    //expect(scope.awesomeThings.length).toBe(3);
-      expect(true).toBe(true);
-  });
 });

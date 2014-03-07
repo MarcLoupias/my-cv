@@ -3,13 +3,13 @@
 angular.module('myCvApp')
     .value('skillBadgeHelper', {
         getBadgeClass: function(level) {
-            if(level === undefined || null) {
+            if(level === undefined || level === null) {
                 return '';
             }
             return 'skill-badge-lvl-' + level;
         },
         getBadgeTitle: function(level) {
-            if(level === undefined || null) {
+            if(level === undefined || level === null) {
                 return '';
             }
 
