@@ -20,7 +20,7 @@
     <file path="/main.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393608450683" ignored="false" />
     <file path="/experience-short.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393583539632" ignored="false" />
     <file path="/experience-full.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393583664227" ignored="false" />
-    <file path="/experiences.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393868466105" ignored="false" />
+    <file path="/experiences.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1394615142948" ignored="false" />
     <file path="/skill-group-short.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393497616497" ignored="false" />
     <file path="/skill-short.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393579988402" ignored="false" />
     <file path="/skill-category-short.js" changelist="3f13620d-0bca-4cf4-9b99-79607f1259fe" time="1393497864389" ignored="false" />
@@ -59,6 +59,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -95,7 +96,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -105,46 +105,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="data-service.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/services/data-service.js">
+      <file leaf-file-name="my-data.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/my-data.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="25" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
+            <state line="154" column="5" selection-start="4563" selection-end="8349" vertical-scroll-proportion="-21.25">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data-service.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/spec/services/data-service.js">
+      <file leaf-file-name="education.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/education.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="41" selection-start="1403" selection-end="1410" vertical-scroll-proportion="0.0">
+            <state line="9" column="36" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="devfolio.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/devfolio.js">
+      <file leaf-file-name="education.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/spec/controllers/education.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="43" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="devfolio.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/spec/controllers/devfolio.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="14" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="skill-badge-helper.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/spec/services/skill-badge-helper.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="76" selection-start="290" selection-end="290" vertical-scroll-proportion="-1.8009828">
+            <state line="22" column="30" selection-start="455" selection-end="455" vertical-scroll-proportion="0.13390663">
               <folding />
             </state>
           </provider>
@@ -160,10 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/my-data.json" />
-        <option value="$PROJECT_DIR$/CHANGELOG.md" />
-        <option value="$PROJECT_DIR$/app/data.json" />
-        <option value="$PROJECT_DIR$/test/spec/directives/devfolio-project.js" />
         <option value="$PROJECT_DIR$/app/scripts/directives/devfolio-project.js" />
         <option value="$PROJECT_DIR$/app/views/devfolio.html" />
         <option value="$PROJECT_DIR$/app/scripts/services/data-service.js" />
@@ -171,11 +149,15 @@
         <option value="$PROJECT_DIR$/dist/my-data.json" />
         <option value="$PROJECT_DIR$/dist/index.html" />
         <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/test/spec/controllers/main.js" />
         <option value="$PROJECT_DIR$/app/scripts/services/skill-badge-helper.js" />
         <option value="$PROJECT_DIR$/test/spec/services/skill-badge-helper.js" />
         <option value="$PROJECT_DIR$/test/spec/services/data-service.js" />
         <option value="$PROJECT_DIR$/test/spec/controllers/devfolio.js" />
+        <option value="$PROJECT_DIR$/test/spec/controllers/education.js" />
+        <option value="$PROJECT_DIR$/test/spec/controllers/experiences.js" />
+        <option value="$PROJECT_DIR$/test/spec/controllers/index.js" />
+        <option value="$PROJECT_DIR$/test/spec/controllers/main.js" />
+        <option value="$PROJECT_DIR$/test/spec/controllers/skills.js" />
       </list>
     </option>
   </component>
@@ -282,6 +264,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="directives" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -612,23 +598,72 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/index.js">
+    <entry file="file://$PROJECT_DIR$/app/code.google.analytics">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/devfolio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="43" selection-start="347" selection-end="347" vertical-scroll-proportion="0.2027027">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/spec/services/data-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="49" selection-start="620" selection-end="620" vertical-scroll-proportion="0.33169532">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/spec/controllers/devfolio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="18" selection-start="754" selection-end="754" vertical-scroll-proportion="0.41031942">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/experiences.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="12" column="57" selection-start="343" selection-end="343" vertical-scroll-proportion="0.22113022">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/spec/controllers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="8" selection-start="1754" selection-end="1754" vertical-scroll-proportion="1.1056511">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="66" selection-start="318" selection-end="318" vertical-scroll-proportion="0.16584766">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/education.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="9" column="36" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/spec/controllers/experiences.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="43" selection-start="769" selection-end="769" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/my-data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="154" column="5" selection-start="4563" selection-end="8349" vertical-scroll-proportion="-21.25">
           <folding />
         </state>
       </provider>
@@ -640,86 +675,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/spec/controllers/skills.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="104" selection-start="750" selection-end="750" vertical-scroll-proportion="0.63670415">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/skills.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="32" selection-start="517" selection-end="517" vertical-scroll-proportion="0.2948403">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/spec/controllers/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="9" selection-start="580" selection-end="580" vertical-scroll-proportion="0.42383292">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/skill-badge-helper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="52" selection-start="665" selection-end="665" vertical-scroll-proportion="0.42383292">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/skills-infos-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="50" selection-start="858" selection-end="858" vertical-scroll-proportion="0.497543">
+        <state line="20" column="55" selection-start="437" selection-end="437" vertical-scroll-proportion="0.37453184">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/spec/directives/degree.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="21" column="54" selection-start="510" selection-end="510" vertical-scroll-proportion="0.38697788">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/.jshintrc">
+    <entry file="file://$PROJECT_DIR$/test/spec/controllers/education.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/spec/services/skills-infos-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/data-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="25" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/spec/services/data-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="41" selection-start="1403" selection-end="1410" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/devfolio.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="43" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/my-data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="173" column="63" selection-start="9151" selection-end="9151" vertical-scroll-proportion="0.1891892">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/spec/controllers/devfolio.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="14" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/spec/services/skill-badge-helper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="76" selection-start="290" selection-end="290" vertical-scroll-proportion="-1.8009828">
+        <state line="22" column="30" selection-start="455" selection-end="455" vertical-scroll-proportion="0.13390663">
           <folding />
         </state>
       </provider>
