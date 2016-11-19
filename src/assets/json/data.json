@@ -1,0 +1,237 @@
+{
+    "generalInformations": {
+        "version":"0.1.4",
+        "websiteSourceCodeUrl":"https://github.com/MarcLoupias/my-cv/releases/tag/0.1.4",
+        "cvTitle":"Développeur web Full Stack",
+        "firstname":"Marc",
+        "fullname":"Loupias",
+        "photoUrl":"assets/images/bibi.150x161.png",
+        "age":"32 ans",
+        "location":"Paris",
+        "country":"France",
+        "drivingLicence":"Permis B",
+        "phone":"sur demande par email",
+        "email":{
+            "mailto":"pro@marc-loupias.fr",
+            "subject":"Développeur web Full Stack"
+        },
+        "socialNetworks": {
+            "github": {
+                "url":"https://github.com/MarcLoupias",
+                "urlTitle":"profil GitHub"
+            },
+            "linkedin": {
+                "url":"http://fr.linkedin.com/pub/marc-loupias/91/714/4aa/",
+                "urlTitle":"profil linkedin"
+            },
+            "viadeo": {
+                "url":"http://www.viadeo.com/fr/profile/marc.loupias",
+                "urlTitle":"profil viadeo"
+            }
+        },
+        "employmentStatus":"Disponible ASAP",
+        "introduction":[
+            {"text":"Après une expérience significative chez un éditeur de logiciel, j'ai décidé il y a deux ans de changer de technologie en passant du client lourd (Windev) au développement web (Java J2EE)."},
+            {"text":"Récemment installé en région parisienne, je cherche aujourd'hui des missions avec les dernières technologies web, plus particulièrement AngularJs et Bootstrap."},
+            {"text":"Les techniques de développement frontend évoluent très vite depuis quelques années. Les possibilités offertes hier aux seuls clients lourds sont ouvertes au web. Avec le responsive design de Bootstrap couplé à la puissance d'AngularJs il est désormais possible de créer des applications de gestion en client léger qui n'ont rien à envier aux anciennes, et le tout sur n'importe quel périphérique, disponibles n'importe où n'importe quand."},
+            {"text":"Je souhaite m'inscrire dans ce mouvement."}
+        ]
+    },
+
+    "jobs": [
+        {
+            "position": "Consultant Java/J2EE web",
+            "company": "BK-Consulting, Paris",
+            "logoUrl":"assets/images/logos/logo-bk.150x83.png",
+            "period": "(mai 2013 à nov. 2013)",
+            "companyUrl": "http://www.bk-consulting.fr/bk/racine/",
+            "companyUrlTitle": "BK Consulting",
+            "jobDescription": "Développement de deux applications web au forfait en mode agile (SCRUM) dans le domaine de l'hotellerie.",
+            "tasks": [
+                {"desc":"Développement en Java et SQL des serveurs d'applications (Play! et MySQL)"},
+                {"desc":"Développement du frontend avec Bootstrap et AngularJs"}
+            ]
+        },
+        {
+            "position": "Ingénieur logiciel",
+            "company": "Scaled Risk, Paris",
+            "logoUrl":"assets/images/logos/logo-sr.283x45.png",
+            "period": "(nov. 2012 à jan. 2013)",
+            "companyUrl": "http://www.scaledrisk.com/",
+            "companyUrlTitle": "Scaled Risk",
+            "jobDescription": "Développement des web services et du frontend d'une solution Big Data",
+            "tasks": [
+                {"desc":"Couche services (Java, Apache Thrift)"},
+                {"desc":"Couche web (intranet) (RIA : HTML5, CSS2, Javascript)"}
+            ]
+        },
+        {
+            "position": "Analyste-programmeur",
+            "company": "LOMACO, Figeac (46)",
+            "logoUrl":"assets/images/logos/logo-lomaco.150x48.jpg",
+            "period": "(avril 2006 à avril. 2011)",
+            "companyUrl": "http://www.lomaco.fr",
+            "companyUrlTitle": "LOMACO S.A.",
+            "jobDescription": "Programmeur, service logiciels de gestion et spécifiques puis, Analyste-Programmeur service logiciels sanitaires.",
+            "tasks": [
+                {"desc":"Recueil des besoins avec le client ou la MOA (A distance ou sur site)."},
+                {"desc":"Rédaction de documentation technique à destination des développeurs."},
+                {"desc":"Développement des produits et modifications demandés."},
+                {"desc":"Encadrement auprès des développeurs."},
+                {"desc":"Tests internes."},
+                {"desc":"Déploiement et tests pré-production (A distance ou sur site)."},
+                {"desc":"Formation des utilisateurs (Sur site)."},
+                {"desc":"Support de niveau 3 (A distance ou sur site)."}
+            ]
+        }
+    ],
+
+    "skillCategories": [
+        {
+            "name": "Environnements",
+            "skillGroups": [
+                {"name":"Systèmes","skills":[{"name":"Linux Debian/Ubuntu","level":2},{"name":"Windows","level":2}]},
+                {"name":"Langages","skills":[{"name":"Bash","level":1},{"name":"perl","level":1}]},
+                {"name":"Protocoles","skills":[{"name":"HTTP","level":2},{"name":"FTP","level":3},{"name":"DNS","level":2},{"name":"TLS","level":1}]},
+                {"name":"Serveurs web","skills":[{"name":"Apache","level":2},{"name":"Tomcat","level":1}]},
+                {"name":"PaaS","skills":[{"name":"Plateforme Heroku","level":2,"skillUrl":"https://www.heroku.com/","skillUrlTitle":"www.heroku.com"}]}
+            ]
+        },
+        {
+            "name": "Bases de données",
+            "skillGroups": [
+                {"name":"Types","skills":[{"name":"Modèle relationnel","level":3}]},
+                {"name":"Langages","skills":[{"name":"SQL","level":3}]},
+                {"name":"Outils","skills":[{"name":"MySQL Workbench","level":3},{"name":"Dia","level":3}]},
+                {"name":"SGBD","skills":[{"name":"MySQL","level":2},{"name":"HyperFileSQL","level":4}]}
+            ]
+        },
+        {
+            "name": "Backend",
+            "skillGroups": [
+                {"name":"Langages","skills":[{"name":"Java","level":2}]},
+                {"name":"Outils","skills":[{"name":"IntelliJ","level":2},{"name":"Eclipse","level":2}]},
+                {"name":"Frameworks","skills":[{"name":"Play!","level":2},{"name":"Google Guice","level":2}]},
+                {"name":"Librairies","skills":[
+                    {"name":"Apache Commons","level":2},{"name":"Javamail","level":2},
+                    {"name":"BouncyCastle","level":2},{"name":"Jackson","level":2}]
+                },
+                {"name":"Tests","skills":[{"name":"JUnit","level":2},{"name":"Mockito","level":2},{"name":"RestAssured","level":2}]}
+            ]
+        },
+        {
+            "name": "Frontend",
+            "skillGroups": [
+                {"name":"Langages","skills":[{"name":"HTML5","level":2},{"name":"CSS","level":2},{"name":"Javascript","level":2}]},
+                {"name":"Outils","skills":[{"name":"Yeoman","level":2},{"name":"Bower","level":2},{"name":"Grunt","level":2}]},
+                {"name":"Frameworks","skills":[{"name":"Bootstrap","level":2},{"name":"AngularJs","level":2}]},
+                {"name":"Tests","skills":[{"name":"Karma","level":2},{"name":"Jasmine","level":2},{"name":"QUnit","level":1}]}
+            ]
+        },
+        {
+            "name": "Génie logiciel",
+            "skillGroups": [
+                {"name":"Analyse","skills":[{"name":"Merise","level":3}]},
+                {"name":"Conception","skills":[
+                    {"name":"UML","level":1},{"name":"SOA","level":2},{"name":"Injection de dépendances","level":2},
+                    {"name":"Design patterns usuels","level":2}
+                ]},
+                {"name":"Méthodologies","skills":[
+                    {"name":"La RACHE","level":4,"skillUrl":"http://www.byatoo.com/la-rache/","skillUrlTitle":"site web de la R.A.C.H.E."},
+                    {"name":"SCRUM","level":2,"skillUrl":"https://www.scrum.org/","skillUrlTitle":"www.scrum.org"}
+                ]}
+            ]
+        },
+        {
+            "name": "Connaissances métiers",
+            "skillGroups": [
+                {"name":"Domaines métiers","skills":[
+                    {"name":"Gestion commerciale","level":2},{"name":"Gestion de stock","level":2},
+                    {"name":"Gestion de production","level":2},{"name":"Comptabilité","level":1}
+                ]},
+                {"name":"Normes","skills":[{"name":"EDIFACT","level":2}]}
+            ]
+        }
+    ],
+
+    "degrees":[
+        {
+            "name":"Ingénieur systèmes et logiciels (Non-obtenu, en cours)",
+            "school":"CNAM, Toulouse (31)",
+            "period":"(2012)",
+            "degreeDescription": [
+                {"desc":"POO, Design Pattern du GoF"}, {"desc":"Programmation Orientée Aspect"}, {"desc":"Java6"},
+                {"desc":"Droit des entreprises"}, {"desc":"Comptabilité et gestion dentreprise"},
+                {"desc":"Gestion de projet (PMBoK)"}
+            ]
+        },
+        {
+            "name":"Concepteur-Développeur",
+            "school":"AFPA, Beaumont (63)",
+            "period":"(nov. 2011)",
+            "degreeDescription": [
+                {"desc":"UML 2.0"}, {"desc":"SQL"}, {"desc":"POO, Design Pattern du GoF"}, {"desc":"Java6"}
+            ]
+        },
+        {
+            "name":"Développeur informatique",
+            "school":"AFPA, Béziers (34)",
+            "period":"(avril 2005 à mars 2006)",
+            "degreeDescription": [
+                {"desc":"Merise"}, {"desc":"UML 1.1"},{"desc":"SQL, TransactSQL"},{"desc":".NET 1.1, Visual Basic"},
+                {"desc":"Java5"},{"desc":"HTML, CSS, Javascript"}
+            ]
+        }
+    ],
+
+    "devfolio":[
+        {
+            "name":"Proof of Concept Play!-AngularJs",
+            "deployedProjectUrl":"http://poc-angular-frontend.herokuapp.com/",
+            "deployedProjectUrlTitle":"visiter la version déployée",
+            "githubRepoList": [
+                {"repoUrl":"https://github.com/MarcLoupias/poc-play-rest-backend", "repoUrlTitle":"code source du backend"},
+                {"repoUrl":"https://github.com/MarcLoupias/poc-angular-frontend", "repoUrlTitle":"code source du frontend"}
+            ],
+            "description":[
+                {"p":"Le projet montre une architecture possible pour un projet d'application web avec le Play framework et le duo Angular/Bootstrap."},
+                {"p":"Le projet est scindé en deux :"},
+                {"p":"La partie back contient la base de données, le serveur d'application et sa façade RESTful."},
+                {"p":"La partie front attaque les services REST du back pour nourrir le site."},
+                {"p":"Le projet est hébergé sur heroku, le back en tant qu'application Play!, le front en tant qu'application node.js"}
+            ],
+            "technos":[
+                {"name":"Heroku"},{"name":"MySQL"},{"name":"Play!"},{"name":"AngularJs"},{"name":"Bootstrap"}
+            ],
+            "languages":[
+                {"name":"SQL"},{"name":"jPQL"},{"name":"Java"},{"name":"HTML5/CSS/Javascript"}
+            ],
+            "environment": [
+                {"name":"GIT"},{"name":"Ant"},{"name":"Yeoman"},{"name":"Grunt"},{"name":"Bower"}
+            ]
+        },
+        {
+            "name":"my-cv",
+            "deployedProjectUrl":"http://cv.marc-loupias.fr",
+            "deployedProjectUrlTitle":"visiter la version déployée",
+            "githubRepoList": [
+                {"repoUrl":"https://github.com/MarcLoupias/my-cv", "repoUrlTitle":"code source du site"}
+            ],
+            "description":[
+                {"p":"Un site web en Angular/Bootstrap."},
+                {"p":"Il s'agit de mon cv en ligne ;)"},
+                {"p":"Le site est hébergé sur heroku en tant qu'application node.js"},
+                {"p":"Les données du site sont dans un json local au site (pas de backend)"}
+            ],
+            "technos":[
+                {"name":"Heroku"},{"name":"AngularJs"},{"name":"Bootstrap"}
+            ],
+            "languages":[
+                {"name":"HTML5/CSS/Javascript"}
+            ],
+            "environment": [
+                {"name":"GIT"},{"name":"Yeoman"},{"name":"Grunt"},{"name":"Bower"}
+            ]
+        }
+    ]
+}

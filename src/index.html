@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CV</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- build:css({.tmp,src}) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+
+    <!-- build:css({.tmp,src}) styles/app.css -->
+    <!-- inject:css -->
+    <!-- css files will be automatically insert here -->
+    <!-- endinject -->
+    <!-- endbuild -->
+</head>
+
+<body ng-app="app" ng-controller="IndexCtrl">
+
+<div ng-if="pending" class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <loader></loader>
+        </div>
+    </div>
+
+</div>
+
+<div ng-if="!pending">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+        <div class="container">
+
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="#">{{gnrlInfos.cvTitle}}</a>
+
+            </div>
+
+            <div class="navbar-collapse collapse">
+
+                <ul class="nav navbar-nav">
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#/experiences"><b>Expériences</b></a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#/skills"><b>Compétences</b></a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#/education"><b>Formations</b></a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#/devfolio"><b>Devfolio</b></a>
+                    </li>
+                    <li class="divider"></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row"><br/></div>
+    </div>
+
+    <!-- application content here -->
+    <div class="container hidden-xs">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well">
+                    <p ng-repeat="p in gnrlInfos.introduction">{{p.text}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-3 hidden-xs">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-heading"><strong>{{gnrlInfos.firstname}} {{gnrlInfos.fullname}}</strong></div>
+                    </div>
+
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="pull-left">
+                            <img src="{{gnrlInfos.photoUrl}}" class="img-rounded">
+                        </div>
+
+                        <div class="pull-right">
+                            <ul class="list-unstyled">
+                                <li>{{gnrlInfos.age}}</li>
+                                <li>{{gnrlInfos.location}}</li>
+                                <li>{{gnrlInfos.drivingLicence}}</li>
+                                <li>{{gnrlInfos.country}}</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div>
+                            <span><i class="glyphicon glyphicon-earphone"></i></span>
+                            {{gnrlInfos.phone}}
+                        </div>
+                        <div>
+                            <span><i class="glyphicon glyphicon-envelope"></i></span>
+                            <a href="mailto:{{gnrlInfos.email.mailto}}?subject={{gnrlInfos.email.subject}}">
+                                {{gnrlInfos.email.mailto}}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <a href="{{gnrlInfos.socialNetworks.github.url}}"
+                           title="{{gnrlInfos.socialNetworks.github.urlTitle}}" target="_blank">
+                            <i class="icon-large icon-github"></i></a>
+                        <a href="{{gnrlInfos.socialNetworks.linkedin.url}}"
+                           title="{{gnrlInfos.socialNetworks.linkedin.urlTitle}}" target="_blank">
+                            <i class="icon-large icon-linked-in"></i></a>
+                        <a href="{{gnrlInfos.socialNetworks.viadeo.url}}"
+                           title="{{gnrlInfos.socialNetworks.viadeo.urlTitle}}" target="_blank">
+                            <i class="icon-large icon-spootify"></i></a>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <span><strong>Situation professionnelle</strong> :</span>
+                        <span class="text-success"><strong>{{gnrlInfos.employmentStatus}}</strong></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-9" ng-view="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row"><br/></div>
+    </div>
+
+    <footer class="jumbotron jumbotron-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4">
+                    <span>&copy; Marc Loupias 2014</span>
+                </div>
+                <div class="col-xs-4">
+                    <span><a href="{{gnrlInfos.websiteSourceCodeUrl}}" target="_blank">version {{gnrlInfos.version}}</a></span>
+                </div>
+                <div class="col-xs-4">
+                  <span class="pull-right">
+                  <a href="http://www.glyphicons.com/" target="_blank">glyphicons.com</a> -
+                  <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>
+              </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+<!--<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-XXXXX-X');
+  ga('send', 'pageview');
+</script>-->
+
+</body>
+
+<!-- build:js({.tmp,src}) scripts/vendor.js -->
+<!-- bower:js -->
+<!-- run `gulp inject` to automatically populate bower script dependencies -->
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,src}) scripts/app.js -->
+<!-- inject:js -->
+<!-- js files will be automatically insert here -->
+<!-- endinject -->
+<!-- inject:partials -->
+<!-- angular templates will be automatically converted in js and inserted here -->
+<!-- endinject -->
+<!-- endbuild -->
+</html>
+

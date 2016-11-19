@@ -1,9 +1,7 @@
-node_modules
-dist
-.tmp
-.sass-cache
-app/bower_components
-app/my-data.json
-app/images/logos
-app/images/bibi.150x161.png
-app/code.google.analytics
+.tmp/
+coverage/
+dist/
+node_modules/
+bower_components/
+.sass-cache/
+.idea/
