@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app')
+angular.module('app.common')
     .factory('skillsInfosService', ['$modal', function ($modal) {
 
         return {
@@ -19,7 +19,7 @@ angular.module('app')
                 }];
 
                 var modalInstance = $modal.open({
-                    templateUrl: 'app/views/modals/skills-infos-service-modal-tpl.html',
+                    templateUrl: 'app/common/skills-infos-service-modal.html',
                     controller: ModalInstanceCtrl
                 });
 

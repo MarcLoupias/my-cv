@@ -1,4 +1,4 @@
-(function () {
+(function (angular) {
     'use strict';
 
     angular
@@ -8,23 +8,23 @@
     function routeConfig($routeProvider) {
         $routeProvider
             .when('/', {
-                templateUrl: 'app/views/main.html',
+                templateUrl: 'app/modules/home/home.html',
                 controller: 'MainCtrl'
             })
             .when('/experiences', {
-                templateUrl: 'app/views/experiences.html',
+                templateUrl: 'app/modules/work-experiences/work-experiences.html',
                 controller: 'ExperiencesCtrl'
             })
             .when('/skills', {
-                templateUrl: 'app/views/skills.html',
+                templateUrl: 'app/modules/skills/skills.html',
                 controller: 'SkillsCtrl'
             })
             .when('/education', {
-                templateUrl: 'app/views/education.html',
+                templateUrl: 'app/modules/education/education.html',
                 controller: 'EducationCtrl'
             })
             .when('/devfolio', {
-                templateUrl: 'app/views/devfolio.html',
+                templateUrl: 'app/modules/dev-folio/dev-folio.html',
                 controller: 'DevfolioCtrl'
             })
             .otherwise({
@@ -32,4 +32,4 @@
             });
     }
 
-})();
+})(angular);

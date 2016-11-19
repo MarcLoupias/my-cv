@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app')
+angular.module('app.common')
     .factory('dataService', ['$http', function ($http) {
         return {
             getJson: function () {

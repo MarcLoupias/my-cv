@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app')
+angular.module('app.common')
     .directive('skillShort', function () {
 
         var template = '{{skill.name}} <skill-badge-level level="skill.level"></skill-badge-level> ';

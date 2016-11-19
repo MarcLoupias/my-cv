@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app')
+angular.module('app.home')
     .directive('experienceShort', function () {
 
         var template = '<div class="panel panel-default">';

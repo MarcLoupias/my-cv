@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app')
+angular.module('app.education')
     .controller('EducationCtrl', ['$scope', 'dataService', function ($scope, dataService) {
 
         dataService.getJson().then(function (res) {

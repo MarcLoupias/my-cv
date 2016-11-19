@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('app')
-    .directive('devfolioProject', function () {
+angular.module('app.devFolio')
+    .directive('devFolioProject', function () {
 
         var template = '<div>';
         template += '<div class="panel panel-default"><div class="panel-body">';

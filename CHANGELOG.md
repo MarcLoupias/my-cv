@@ -1,11 +1,12 @@
 # CHANGELOG
 
+## 0.2.0 (2016/11/XX)
 
-## v0.2.0
+- changing yeoman generator from [generator-angular](https://github.com/yeoman/generator-angular) to [fountain-webapp](https://github.com/FountainJS/generator-fountain-webapp)
+- refactoring folders scaffolding from file type based to feature based.
+  Cf [John Papa angular-styleguide Y152](https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y152)
 
-- changing yeoman generator from [generator-angular] (https://github.com/yeoman/generator-angular) to [fountain-webapp] (https://github.com/FountainJS/generator-fountain-webapp)
-
-## v0.1.4
+## 0.1.4 (2014/03/04)
 
 - responsive design changes for small devices. On main page for small devices, skills and education column are hidden.
   On others general informations are hidden.
@@ -13,10 +14,10 @@
 - devfolio is angularised
 - google analytics
 
-## v0.1.3
+## 0.1.3 (2014/03/03)
 
 - first working version
 
-## v0.1.0
+## 0.1.0 (2014/02/27)
 
 - first commited version

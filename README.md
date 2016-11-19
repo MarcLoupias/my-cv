@@ -3,16 +3,34 @@
 
 [![WTFPL](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png)](http://wtfpl.net)
 
+Published @ http://cv.marc-loupias.fr
+
 ## scaffold
 
-It uses [fountain-webapp] (https://github.com/FountainJS/generator-fountain-webapp)
-
-Careful about [this issue] (https://github.com/FountainJS/generator-fountain-webapp/issues/150)
+It uses [fountain-webapp](https://github.com/FountainJS/generator-fountain-webapp)
 
 ## i18n
 
-It is a french résumé, you may need to translate the menu in index.html. There is just a few words.
+It is a french résumé.
 
 ## data
 
-Data in the website are provided by `data.json` file.
+Data in the website are provided by `src/assets/json/data.json` file.
+
+## usage
+
+Install dev dependencies
+`npm install`
+
+Install project dependencies
+`bower install`
+
+Run in dev mode
+`gulp serve`
+
+Test
+`gulp test`
+
+Build
+`gulp build`
+

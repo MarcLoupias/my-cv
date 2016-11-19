@@ -1,10 +1,9 @@
 'use strict';
 
-angular.module('app')
-    .controller('MainCtrl', ['$scope', 'skillsInfosService', 'dataService', function ($scope, skillsInfosService, dataService) {
+angular.module('app.skills')
+    .controller('SkillsCtrl', ['$scope', 'skillsInfosService', 'dataService', function ($scope, skillsInfosService, dataService) {
 
         dataService.getJson().then(function (res) {
-                $scope.jobs = res.data.jobs;
                 $scope.skillCategories = res.data.skillCategories;
             }, function() {
                 alert('c la fote a windoze !');

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app')
+angular.module('app.common')
     .directive('skillCategoryShort', function () {
 
         var template = '<div class="panel panel-default">';

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app')
+angular.module('app.education')
     .directive('degree', function () {
         var template = '<div class="panel panel-default">';
         template += '       <div class="panel-body">';

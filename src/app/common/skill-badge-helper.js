@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app')
+angular.module('app.common')
     .value('skillBadgeHelper', {
         getBadgeClass: function(level) {
             if(level === undefined || level === null) {

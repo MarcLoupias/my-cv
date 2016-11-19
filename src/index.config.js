@@ -1,13 +1,12 @@
-(function () {
+(function (angular) {
     'use strict';
 
     angular
         .module('app')
         .config(config);
 
-    /** @ngInject */
     function config() {
 
     }
 
-})();
+})(angular);

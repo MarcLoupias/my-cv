@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app')
+angular.module('app.common')
     .directive('skillBadgeLevel', function () {
 
         var template = '<span class="badge" ng-class="badgeHelperService.getBadgeClass(level)" ' +
