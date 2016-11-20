@@ -1,29 +1,33 @@
-'use strict';
+(function (angular) {
+    'use strict';
 
-angular.module('app.common')
-    .factory('skillsInfosService', ['$modal', function ($modal) {
+    angular
+        .module('app.common')
+        .factory('skillsInfosService', ['$modal', function ($modal) {
 
-        return {
-            displaySkillsInfos: function () {
+            return {
+                displaySkillsInfos: function () {
 
-                var ModalInstanceCtrl;
+                    var ModalInstanceCtrl;
 
-                ModalInstanceCtrl = ['$scope', '$modalInstance', function ($scope, $modalInstance) {
-                    $scope.ok = function () {
-                        $modalInstance.close();
-                    };
+                    ModalInstanceCtrl = ['$scope', '$modalInstance', function ($scope, $modalInstance) {
+                        $scope.ok = function () {
+                            $modalInstance.close();
+                        };
 
-                    $scope.cancel = function () {
-                        $modalInstance.dismiss('cancel');
-                    };
-                }];
+                        $scope.cancel = function () {
+                            $modalInstance.dismiss('cancel');
+                        };
+                    }];
 
-                var modalInstance = $modal.open({
-                    templateUrl: 'app/common/skills-infos-service-modal.html',
-                    controller: ModalInstanceCtrl
-                });
+                    var modalInstance = $modal.open({
+                        templateUrl: 'app/common/skills-infos-service-modal.html',
+                        controller: ModalInstanceCtrl
+                    });
 
-                return modalInstance.result;
-            }
-        };
-    }]);
+                    return modalInstance.result;
+                }
+            };
+        }]);
+
+})(angular);

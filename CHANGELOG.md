@@ -5,6 +5,10 @@
 - changing yeoman generator from [generator-angular](https://github.com/yeoman/generator-angular) to [fountain-webapp](https://github.com/FountainJS/generator-fountain-webapp)
 - refactoring folders scaffolding from file type based to feature based.
   Cf [John Papa angular-styleguide Y152](https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y152)
+- refactoring js sources files :
+    - [IIFE : Y010](https://github.com/johnpapa/angular-styleguide/tree/master/a1#iife)
+    - [Named functions : Y024](https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y024)
+    - [Manual dependencies identification : Y091](https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y091)
 
 ## 0.1.4 (2014/03/04)
 
