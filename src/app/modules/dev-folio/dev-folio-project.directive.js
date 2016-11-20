@@ -3,9 +3,9 @@
 
     angular
         .module('app.devFolio')
-        .directive('devFolioProject', devFolioProjectDirective);
+        .directive('cvDevFolioProject', cvDevFolioProjectDirective);
 
-    function devFolioProjectDirective() {
+    function cvDevFolioProjectDirective() {
         var template = '<div>';
         template += '<div class="panel panel-default"><div class="panel-body">';
         template += '   <p><strong>{{project.name}}</strong>';

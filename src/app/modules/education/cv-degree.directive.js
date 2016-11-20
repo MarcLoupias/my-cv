@@ -3,9 +3,9 @@
 
     angular
         .module('app.education')
-        .directive('degree', degreeDirective);
+        .directive('cvDegree', cvDegreeDirective);
 
-    function degreeDirective() {
+    function cvDegreeDirective() {
         var template = '<div class="panel panel-default">';
         template += '       <div class="panel-body">';
         template += '           <h4><strong>{{degree.name}}</strong></h4>';

@@ -3,9 +3,9 @@
 
     angular
         .module('app.common')
-        .directive('loader', loaderDirective);
+        .directive('cvLoader', cvLoaderDirective);
 
-    function loaderDirective() {
+    function cvLoaderDirective() {
         return {
             template: '<div>' +
             '<img src="assets/images/loader.48x48-white.gif" alt="Loading" class="img-rounded center-block">' +

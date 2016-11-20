@@ -3,9 +3,9 @@
 
     angular
         .module('app.common')
-        .directive('skillBadgeLevel', skillBadgeLevelDirective);
+        .directive('cvSkillBadgeLevel', cvSkillBadgeLevelDirective);
 
-    function skillBadgeLevelDirective() {
+    function cvSkillBadgeLevelDirective() {
         var template = '<span class="badge" ng-class="badgeHelperService.getBadgeClass(level)" ' +
             'popover-title="{{title}}" popover="{{text}}" ' +
             'popover-trigger="mouseenter">{{level}}</span> ';

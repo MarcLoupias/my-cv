@@ -5,9 +5,9 @@
         .module('app.home')
         .controller('MainController', MainController);
 
-    MainController.$inject = ['skillsInfosService', 'dataService'];
+    MainController.$inject = ['skillsInfosModal', 'dataService'];
 
-    function MainController(skillsInfosService, dataService) {
+    function MainController(skillsInfosModal, dataService) {
         var vm = this;
 
         dataService.getJson()
@@ -21,7 +21,7 @@
             );
 
         vm.displaySkillLegend = function () {
-            skillsInfosService.displaySkillsInfos();
+            skillsInfosModal.displaySkillsInfos();
         };
     }
 

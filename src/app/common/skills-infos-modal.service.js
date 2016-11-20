@@ -3,11 +3,11 @@
 
     angular
         .module('app.common')
-        .factory('skillsInfosService', skillsInfosService);
+        .factory('skillsInfosModal', skillsInfosModalService);
 
-    skillsInfosService.$inject = ['$modal'];
+    skillsInfosModalService.$inject = ['$modal'];
 
-    function skillsInfosService($modal) {
+    function skillsInfosModalService($modal) {
         return {
             displaySkillsInfos: function () {
 
@@ -24,7 +24,7 @@
                 }];
 
                 var modalInstance = $modal.open({
-                    templateUrl: 'app/common/skills-infos-service-modal.html',
+                    templateUrl: 'app/common/skills-infos-modal.html',
                     controller: ModalInstanceCtrl
                 });
 
