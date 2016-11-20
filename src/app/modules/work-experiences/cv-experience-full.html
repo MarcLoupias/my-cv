@@ -1,0 +1,14 @@
+<div class="panel panel-default">
+    <div class="panel-body">
+        <a href="{{job.companyUrl}}" target="_blank">
+            <img src="{{job.logoUrl}}" alt="{{job.companyUrlTitle}}" class="img-rounded pull-right">
+        </a>
+        <h4><strong>{{job.position}}</strong></h4>
+        <h4>{{job.company}}</h4>
+        <h4><small>{{job.period}}</small></h4>
+        <p>{{job.jobDescription}}</p>
+        <ul>
+            <li ng-repeat="task in job.tasks">{{task.desc}}</li>
+        </ul>
+    </div>
+</div>

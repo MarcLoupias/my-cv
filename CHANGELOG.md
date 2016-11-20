@@ -13,6 +13,7 @@
     - [Unique Directive Prefix (`cv-`) : Y073](https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y073)
     - [Feature File Names : Y121](https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y121)
     - [Factory and Service Names : Y125](https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y125)
+    - externalize directives templates into separated html files
 
 ## 0.1.4 (2014/03/04)
 

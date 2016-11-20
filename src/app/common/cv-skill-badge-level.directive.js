@@ -6,12 +6,8 @@
         .directive('cvSkillBadgeLevel', cvSkillBadgeLevelDirective);
 
     function cvSkillBadgeLevelDirective() {
-        var template = '<span class="badge" ng-class="badgeHelperService.getBadgeClass(level)" ' +
-            'popover-title="{{title}}" popover="{{text}}" ' +
-            'popover-trigger="mouseenter">{{level}}</span> ';
-
         return {
-            template: template,
+            templateUrl: 'app/common/cv-skill-badge-level.html',
             restrict: 'E',
             scope: {
                 level: '=level'

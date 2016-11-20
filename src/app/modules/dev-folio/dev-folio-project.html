@@ -1,0 +1,25 @@
+<div class="panel panel-default">
+    <div class="panel-body">
+        <p><strong>{{project.name}}</strong>
+            <span class="pull-right">
+                <a href="{{project.deployedProjectUrl}}" title="{{project.deployedProjectUrlTitle}}" target="_blank">
+                    <i class="icon-large icon-link"></i>
+                </a>
+                <a ng-repeat="repo in project.githubRepoList" href="{{repo.repoUrl}}" title="{{repo.repoUrlTitle}}"
+                   target="_blank">
+                    <i class="icon-large icon-github"></i>
+                </a>
+            </span>
+            <div class="well">
+                <p ng-repeat="text in project.description">{{text.p}}</p>
+            </div>
+            <h4><small>Technologies</small></h4>
+            <p><span ng-repeat="t in project.technos">{{t.name}} </span></p>
+
+            <h4><small>Langages</small></h4>
+            <p><span ng-repeat="l in project.languages">{{l.name}} </span></p>
+
+            <h4><small>Environnement</small></h4>
+            <p><span ng-repeat="e in project.environment">{{e.name}} </span></p>
+    </div>
+</div>

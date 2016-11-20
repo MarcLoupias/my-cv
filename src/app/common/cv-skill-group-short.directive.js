@@ -6,15 +6,8 @@
         .directive('cvSkillGroupShort', cvSkillGroupShortDirective);
 
     function cvSkillGroupShortDirective() {
-        var template = '<div>';
-        template += '<h4><small>{{skillGroup.name}}</small></h4>';
-        template += '<p>';
-        template += '<span><cv-skill-short ng-repeat="skill in skillGroup.skills" skill="skill"></cv-skill-short></span>';
-        template += '</p>';
-        template += '</div>';
-
         return {
-            template: template,
+            templateUrl: 'app/common/cv-skill-group-short.html',
             restrict: 'E',
             scope: {
                 skillGroup: '=skillGroup'
