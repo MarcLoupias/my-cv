@@ -3,15 +3,18 @@
 
     angular
         .module('app.workExperiences')
-        .controller('ExperiencesCtrl', ['$scope', 'dataService', function ($scope, dataService) {
+        .controller('ExperiencesCtrl', ExperiencesController);
 
-            dataService.getJson()
-                .then(function (res) {
+    ExperiencesController.$inject = ['$scope', 'dataService'];
+
+    function ExperiencesController($scope, dataService) {
+        dataService.getJson()
+            .then(function (res) {
                     $scope.jobs = res.data.jobs;
                 }, function () {
                     alert('c la fote a windoze !');
                 }
             );
-        }]);
+    }
 
 })(angular);

@@ -3,15 +3,18 @@
 
     angular
         .module('app.education')
-        .controller('EducationCtrl', ['$scope', 'dataService', function ($scope, dataService) {
+        .controller('EducationCtrl', EducationController);
 
-            dataService.getJson()
-                .then(function (res) {
+    EducationController.$inject = ['$scope', 'dataService'];
+
+    function EducationController($scope, dataService) {
+        dataService.getJson()
+            .then(function (res) {
                     $scope.degrees = res.data.degrees;
                 }, function () {
                     alert('c la fote a windoze !');
                 }
             );
-        }]);
+    }
 
 })(angular);

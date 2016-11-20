@@ -3,31 +3,34 @@
 
     angular
         .module('app.common')
-        .factory('skillsInfosService', ['$modal', function ($modal) {
+        .factory('skillsInfosService', skillsInfosService);
 
-            return {
-                displaySkillsInfos: function () {
+    skillsInfosService.$inject = ['$modal'];
 
-                    var ModalInstanceCtrl;
+    function skillsInfosService($modal) {
+        return {
+            displaySkillsInfos: function () {
 
-                    ModalInstanceCtrl = ['$scope', '$modalInstance', function ($scope, $modalInstance) {
-                        $scope.ok = function () {
-                            $modalInstance.close();
-                        };
+                var ModalInstanceCtrl;
 
-                        $scope.cancel = function () {
-                            $modalInstance.dismiss('cancel');
-                        };
-                    }];
+                ModalInstanceCtrl = ['$scope', '$modalInstance', function ($scope, $modalInstance) {
+                    $scope.ok = function () {
+                        $modalInstance.close();
+                    };
 
-                    var modalInstance = $modal.open({
-                        templateUrl: 'app/common/skills-infos-service-modal.html',
-                        controller: ModalInstanceCtrl
-                    });
+                    $scope.cancel = function () {
+                        $modalInstance.dismiss('cancel');
+                    };
+                }];
 
-                    return modalInstance.result;
-                }
-            };
-        }]);
+                var modalInstance = $modal.open({
+                    templateUrl: 'app/common/skills-infos-service-modal.html',
+                    controller: ModalInstanceCtrl
+                });
+
+                return modalInstance.result;
+            }
+        };
+    }
 
 })(angular);
