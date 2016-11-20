@@ -5,12 +5,14 @@
         .module('app.education')
         .controller('EducationController', EducationController);
 
-    EducationController.$inject = ['$scope', 'dataService'];
+    EducationController.$inject = ['dataService'];
 
-    function EducationController($scope, dataService) {
+    function EducationController(dataService) {
+        var vm = this;
+
         dataService.getJson()
             .then(function (res) {
-                    $scope.degrees = res.data.degrees;
+                    vm.degrees = res.data.degrees;
                 }, function () {
                     alert('c la fote a windoze !');
                 }

@@ -9,6 +9,7 @@
     - [IIFE : Y010](https://github.com/johnpapa/angular-styleguide/tree/master/a1#iife)
     - [Named functions : Y024](https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y024)
     - [Manual dependencies identification : Y091](https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y091)
+    - controllerAs syntax with vm : [Y030](https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y030) [Y031](https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y031) [Y032](https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y032)
 
 ## 0.1.4 (2014/03/04)
 

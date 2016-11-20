@@ -5,19 +5,22 @@
         .module('app.home')
         .controller('MainController', MainController);
 
-    MainController.$inject = ['$scope', 'skillsInfosService', 'dataService'];
+    MainController.$inject = ['skillsInfosService', 'dataService'];
 
-    function MainController($scope, skillsInfosService, dataService) {
+    function MainController(skillsInfosService, dataService) {
+        var vm = this;
+
         dataService.getJson()
             .then(function (res) {
-                    $scope.jobs = res.data.jobs;
-                    $scope.skillCategories = res.data.skillCategories;
+                    vm.gnrlInfos = res.data.generalInformations;
+                    vm.jobs = res.data.jobs;
+                    vm.skillCategories = res.data.skillCategories;
                 }, function () {
                     alert('c la fote a windoze !');
                 }
             );
 
-        $scope.displaySkillLegend = function () {
+        vm.displaySkillLegend = function () {
             skillsInfosService.displaySkillsInfos();
         };
     }

@@ -2,7 +2,7 @@
 <div class="row visible-xs">
     <div class="col-xs-12">
         <div class="well">
-            <p ng-repeat="p in gnrlInfos.introduction">{{p.text}}</p>
+            <p ng-repeat="p in homeCtrl.gnrlInfos.introduction">{{p.text}}</p>
         </div>
     </div>
 </div>
@@ -12,7 +12,10 @@
     <div class="col-xs-12">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <div class="panel-heading"><strong>{{gnrlInfos.firstname}} {{gnrlInfos.fullname}}</strong></div>
+                <div class="panel-heading">
+                    homeCtrl
+                    <strong>{{homeCtrl.gnrlInfos.firstname}} {{homeCtrl.gnrlInfos.fullname}}</strong>
+                </div>
             </div>
 
         </div>
@@ -20,15 +23,15 @@
         <div class="panel panel-default">
             <div class="panel-body">
                 <div class="pull-left">
-                    <img src="{{gnrlInfos.photoUrl}}" class="img-rounded">
+                    <img src="{{homeCtrl.gnrlInfos.photoUrl}}" class="img-rounded">
                 </div>
 
                 <div class="pull-right">
                     <ul class="list-unstyled">
-                        <li>{{gnrlInfos.age}}</li>
-                        <li>{{gnrlInfos.location}}</li>
-                        <li>{{gnrlInfos.drivingLicence}}</li>
-                        <li>{{gnrlInfos.country}}</li>
+                        <li>{{homeCtrl.gnrlInfos.age}}</li>
+                        <li>{{homeCtrl.gnrlInfos.location}}</li>
+                        <li>{{homeCtrl.gnrlInfos.drivingLicence}}</li>
+                        <li>{{homeCtrl.gnrlInfos.country}}</li>
                     </ul>
                 </div>
 
@@ -39,12 +42,12 @@
             <div class="panel-body">
                 <div>
                     <span><i class="glyphicon glyphicon-earphone"></i></span>
-                    {{gnrlInfos.phone}}
+                    {{homeCtrl.gnrlInfos.phone}}
                 </div>
                 <div>
                     <span><i class="glyphicon glyphicon-envelope"></i></span>
-                    <a href="mailto:{{gnrlInfos.email.mailto}}?subject={{gnrlInfos.email.subject}}">
-                        {{gnrlInfos.email.mailto}}
+                    <a href="mailto:{{homeCtrl.gnrlInfos.email.mailto}}?subject={{homeCtrl.gnrlInfos.email.subject}}">
+                        {{homeCtrl.gnrlInfos.email.mailto}}
                     </a>
                 </div>
             </div>
@@ -52,11 +55,11 @@
 
         <div class="panel panel-default">
             <div class="panel-body">
-                <a href="{{gnrlInfos.socialNetworks.github.url}}" title="{{gnrlInfos.socialNetworks.github.urlTitle}}" target="_blank">
+                <a href="{{homeCtrl.gnrlInfos.socialNetworks.github.url}}" title="{{homeCtrl.gnrlInfos.socialNetworks.github.urlTitle}}" target="_blank">
                     <i class="icon-large icon-github"></i></a>
-                <a href="{{gnrlInfos.socialNetworks.linkedin.url}}" title="{{gnrlInfos.socialNetworks.linkedin.urlTitle}}" target="_blank">
+                <a href="{{homeCtrl.gnrlInfos.socialNetworks.linkedin.url}}" title="{{homeCtrl.gnrlInfos.socialNetworks.linkedin.urlTitle}}" target="_blank">
                     <i class="icon-large icon-linked-in"></i></a>
-                <a href="{{gnrlInfos.socialNetworks.viadeo.url}}" title="{{gnrlInfos.socialNetworks.viadeo.urlTitle}}" target="_blank">
+                <a href="{{homeCtrl.gnrlInfos.socialNetworks.viadeo.url}}" title="{{homeCtrl.gnrlInfos.socialNetworks.viadeo.urlTitle}}" target="_blank">
                     <i class="icon-large icon-spootify"></i></a>
             </div>
         </div>
@@ -64,7 +67,7 @@
         <div class="panel panel-default">
             <div class="panel-body">
                 <span><strong>Situation professionnelle</strong> :</span>
-                <span class="text-success"><strong>{{gnrlInfos.employmentStatus}}</strong></span>
+                <span class="text-success"><strong>{{homeCtrl.gnrlInfos.employmentStatus}}</strong></span>
             </div>
         </div>
 
@@ -82,7 +85,7 @@
             </div>
         </div>
 
-        <experience-short ng-repeat="job in jobs" job="job"></experience-short>
+        <experience-short ng-repeat="job in homeCtrl.jobs" job="job"></experience-short>
 
     </div>
 
@@ -94,7 +97,7 @@
                 <strong>Compétences</strong>
 
                 <div class="btn-group btn-group-sm pull-right">
-                    <button type="button" class="btn btn-default" title="Légende" ng-click="displaySkillLegend()">
+                    <button type="button" class="btn btn-default" title="Légende" ng-click="homeCtrl.displaySkillLegend()">
                         Légende <span class="glyphicon glyphicon-info-sign"></span>
                     </button>
                 </div>
@@ -102,7 +105,7 @@
             </div>
         </div>
 
-        <skill-category-short ng-repeat="skillCategory in skillCategories" skill-category="skillCategory"></skill-category-short>
+        <skill-category-short ng-repeat="skillCategory in homeCtrl.skillCategories" skill-category="skillCategory"></skill-category-short>
 
     </div>
 

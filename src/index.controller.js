@@ -5,15 +5,17 @@
         .module('app')
         .controller('IndexController', IndexController);
 
-    IndexController.$inject = ['$scope', 'dataService'];
+    IndexController.$inject = ['dataService'];
 
-    function IndexController($scope, dataService) {
-        $scope.pending = true;
+    function IndexController(dataService) {
+        var vm = this;
+
+        vm.pending = true;
 
         dataService.getJson()
             .then(function (res) {
-                    $scope.gnrlInfos = res.data.generalInformations;
-                    $scope.pending = false;
+                    vm.gnrlInfos = res.data.generalInformations;
+                    vm.pending = false;
                 }, function () {
                     alert('c la fote a windoze !');
                 }

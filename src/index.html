@@ -22,9 +22,9 @@
     <!-- endbuild -->
 </head>
 
-<body ng-app="app" ng-controller="IndexController">
+<body ng-app="app" ng-controller="IndexController as indexCtrl">
 
-<div ng-if="pending" class="container">
+<div ng-if="indexCtrl.pending" class="container">
     <div class="row">
         <div class="col-md-12">
             <loader></loader>
@@ -33,7 +33,7 @@
 
 </div>
 
-<div ng-if="!pending">
+<div ng-if="!indexCtrl.pending">
 
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 
@@ -48,7 +48,7 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <a class="navbar-brand" href="#/">{{gnrlInfos.cvTitle}}</a>
+                <a class="navbar-brand" href="#/">{{indexCtrl.gnrlInfos.cvTitle}}</a>
 
             </div>
 
@@ -89,7 +89,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="well">
-                    <p ng-repeat="p in gnrlInfos.introduction">{{p.text}}</p>
+                    <p ng-repeat="p in indexCtrl.gnrlInfos.introduction">{{p.text}}</p>
                 </div>
             </div>
         </div>
@@ -101,7 +101,9 @@
             <div class="col-md-3 hidden-xs">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <div class="panel-heading"><strong>{{gnrlInfos.firstname}} {{gnrlInfos.fullname}}</strong></div>
+                        <div class="panel-heading">
+                            <strong>{{indexCtrl.gnrlInfos.firstname}} {{indexCtrl.gnrlInfos.fullname}}</strong>
+                        </div>
                     </div>
 
                 </div>
@@ -109,15 +111,15 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <div class="pull-left">
-                            <img src="{{gnrlInfos.photoUrl}}" class="img-rounded">
+                            <img src="{{indexCtrl.gnrlInfos.photoUrl}}" class="img-rounded">
                         </div>
 
                         <div class="pull-right">
                             <ul class="list-unstyled">
-                                <li>{{gnrlInfos.age}}</li>
-                                <li>{{gnrlInfos.location}}</li>
-                                <li>{{gnrlInfos.drivingLicence}}</li>
-                                <li>{{gnrlInfos.country}}</li>
+                                <li>{{indexCtrl.gnrlInfos.age}}</li>
+                                <li>{{indexCtrl.gnrlInfos.location}}</li>
+                                <li>{{indexCtrl.gnrlInfos.drivingLicence}}</li>
+                                <li>{{indexCtrl.gnrlInfos.country}}</li>
                             </ul>
                         </div>
 
@@ -128,12 +130,12 @@
                     <div class="panel-body">
                         <div>
                             <span><i class="glyphicon glyphicon-earphone"></i></span>
-                            {{gnrlInfos.phone}}
+                            {{indexCtrl.gnrlInfos.phone}}
                         </div>
                         <div>
                             <span><i class="glyphicon glyphicon-envelope"></i></span>
-                            <a href="mailto:{{gnrlInfos.email.mailto}}?subject={{gnrlInfos.email.subject}}">
-                                {{gnrlInfos.email.mailto}}
+                            <a href="mailto:{{indexCtrl.gnrlInfos.email.mailto}}?subject={{indexCtrl.gnrlInfos.email.subject}}">
+                                {{indexCtrl.gnrlInfos.email.mailto}}
                             </a>
                         </div>
                     </div>
@@ -141,14 +143,14 @@
 
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <a href="{{gnrlInfos.socialNetworks.github.url}}"
-                           title="{{gnrlInfos.socialNetworks.github.urlTitle}}" target="_blank">
+                        <a href="{{indexCtrl.gnrlInfos.socialNetworks.github.url}}"
+                           title="{{indexCtrl.gnrlInfos.socialNetworks.github.urlTitle}}" target="_blank">
                             <i class="icon-large icon-github"></i></a>
-                        <a href="{{gnrlInfos.socialNetworks.linkedin.url}}"
-                           title="{{gnrlInfos.socialNetworks.linkedin.urlTitle}}" target="_blank">
+                        <a href="{{indexCtrl.gnrlInfos.socialNetworks.linkedin.url}}"
+                           title="{{indexCtrl.gnrlInfos.socialNetworks.linkedin.urlTitle}}" target="_blank">
                             <i class="icon-large icon-linked-in"></i></a>
-                        <a href="{{gnrlInfos.socialNetworks.viadeo.url}}"
-                           title="{{gnrlInfos.socialNetworks.viadeo.urlTitle}}" target="_blank">
+                        <a href="{{indexCtrl.gnrlInfos.socialNetworks.viadeo.url}}"
+                           title="{{indexCtrl.gnrlInfos.socialNetworks.viadeo.urlTitle}}" target="_blank">
                             <i class="icon-large icon-spootify"></i></a>
                     </div>
                 </div>
@@ -156,7 +158,7 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <span><strong>Situation professionnelle</strong> :</span>
-                        <span class="text-success"><strong>{{gnrlInfos.employmentStatus}}</strong></span>
+                        <span class="text-success"><strong>{{indexCtrl.gnrlInfos.employmentStatus}}</strong></span>
                     </div>
                 </div>
 
@@ -178,7 +180,11 @@
                     <span>&copy; Marc Loupias 2014</span>
                 </div>
                 <div class="col-xs-4">
-                    <span><a href="{{gnrlInfos.websiteSourceCodeUrl}}" target="_blank">version {{gnrlInfos.version}}</a></span>
+                    <span>
+                        <a href="{{indexCtrl.gnrlInfos.websiteSourceCodeUrl}}" target="_blank">
+                            version {{indexCtrl.gnrlInfos.version}}
+                        </a>
+                    </span>
                 </div>
                 <div class="col-xs-4">
                   <span class="pull-right">

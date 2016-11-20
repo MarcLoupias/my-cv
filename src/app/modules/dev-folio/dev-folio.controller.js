@@ -5,12 +5,14 @@
         .module('app.devFolio')
         .controller('DevFolioController', DevFolioController);
 
-    DevFolioController.$inject = ['$scope', 'dataService'];
+    DevFolioController.$inject = ['dataService'];
 
-    function DevFolioController($scope, dataService) {
+    function DevFolioController(dataService) {
+        var vm = this;
+
         dataService.getJson()
             .then(function (res) {
-                    $scope.devfolio = res.data.devfolio;
+                    vm.devfolio = res.data.devfolio;
                 }, function () {
                     alert('c la fote a windoze !');
                 }

@@ -9,23 +9,28 @@
         $routeProvider
             .when('/', {
                 templateUrl: 'app/modules/home/home.html',
-                controller: 'MainController'
+                controller: 'MainController',
+                controllerAs: 'homeCtrl'
             })
             .when('/experiences', {
                 templateUrl: 'app/modules/work-experiences/work-experiences.html',
-                controller: 'ExperiencesController'
+                controller: 'WorkExperiencesController',
+                controllerAs: 'xpCtrl'
             })
             .when('/skills', {
                 templateUrl: 'app/modules/skills/skills.html',
-                controller: 'SkillsController'
+                controller: 'SkillsController',
+                controllerAs: 'skillsCtrl'
             })
             .when('/education', {
                 templateUrl: 'app/modules/education/education.html',
-                controller: 'EducationController'
+                controller: 'EducationController',
+                controllerAs: 'eduCtrl'
             })
             .when('/devfolio', {
                 templateUrl: 'app/modules/dev-folio/dev-folio.html',
-                controller: 'DevFolioController'
+                controller: 'DevFolioController',
+                controllerAs: 'devCtrl'
             })
             .otherwise({
                 redirectTo: '/'
