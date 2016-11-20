@@ -3,7 +3,7 @@
 
     angular
         .module('app.education')
-        .controller('EducationCtrl', EducationController);
+        .controller('EducationController', EducationController);
 
     EducationController.$inject = ['$scope', 'dataService'];
 

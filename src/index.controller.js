@@ -3,8 +3,8 @@
 
     angular
         .module('app')
-        .controller('IndexCtrl', IndexController);
-    
+        .controller('IndexController', IndexController);
+
     IndexController.$inject = ['$scope', 'dataService'];
 
     function IndexController($scope, dataService) {

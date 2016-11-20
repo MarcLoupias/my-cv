@@ -3,7 +3,7 @@
 
     angular
         .module('app.skills')
-        .controller('SkillsCtrl', SkillsController);
+        .controller('SkillsController', SkillsController);
 
     SkillsController.$inject = ['$scope', 'skillsInfosService', 'dataService'];
 

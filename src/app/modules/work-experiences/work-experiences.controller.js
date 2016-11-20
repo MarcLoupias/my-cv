@@ -3,7 +3,7 @@
 
     angular
         .module('app.workExperiences')
-        .controller('ExperiencesCtrl', ExperiencesController);
+        .controller('ExperiencesController', ExperiencesController);
 
     ExperiencesController.$inject = ['$scope', 'dataService'];
 

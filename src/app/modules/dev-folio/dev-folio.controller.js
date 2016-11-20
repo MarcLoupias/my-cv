@@ -3,7 +3,7 @@
 
     angular
         .module('app.devFolio')
-        .controller('DevfolioCtrl', DevFolioController);
+        .controller('DevFolioController', DevFolioController);
 
     DevFolioController.$inject = ['$scope', 'dataService'];
 
