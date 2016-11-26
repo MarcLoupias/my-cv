@@ -7,14 +7,13 @@ const filter = require('gulp-filter');
 const conf = require('../conf/gulp.conf');
 
 gulp.task('clean', clean);
-gulp.task('other:serve', otherServe);
-gulp.task('other:dist', otherDist);
+gulp.task('other', other);
 
 function clean() {
   return del([conf.paths.dist, conf.paths.tmp]);
 }
 
-function otherServe() {
+function other() {
     const fileFilter = filter(file => file.stat.isFile());
 
     return gulp.src([
@@ -22,16 +21,5 @@ function otherServe() {
         path.join(`!${conf.paths.src}`, '/**/*.{css,js,html}')
     ])
         .pipe(fileFilter)
-        .pipe(gulp.dest(conf.paths.tmp));
-}
-
-function otherDist() {
-  const fileFilter = filter(file => file.stat.isFile());
-
-  return gulp.src([
-    path.join(conf.paths.src, '/**/*'),
-    path.join(`!${conf.paths.src}`, '/**/*.{css,js,html}')
-  ])
-    .pipe(fileFilter)
-    .pipe(gulp.dest(conf.paths.dist));
+        .pipe(gulp.dest(conf.paths.dist));
 }
