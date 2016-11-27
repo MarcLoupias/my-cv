@@ -11,6 +11,7 @@
         var vm = this;
 
         vm.pending = true;
+        vm.isBurgerCollapsed = true;
 
         dataService.getJson()
             .then(function (res) {

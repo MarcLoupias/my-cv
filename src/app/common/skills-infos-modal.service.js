@@ -5,27 +5,13 @@
         .module('app.common')
         .factory('skillsInfosModal', skillsInfosModalService);
 
-    skillsInfosModalService.$inject = ['$modal'];
+    skillsInfosModalService.$inject = ['$uibModal'];
 
-    function skillsInfosModalService($modal) {
+    function skillsInfosModalService($uibModal) {
         return {
             displaySkillsInfos: function () {
-
-                var ModalInstanceCtrl;
-
-                ModalInstanceCtrl = ['$scope', '$modalInstance', function ($scope, $modalInstance) {
-                    $scope.ok = function () {
-                        $modalInstance.close();
-                    };
-
-                    $scope.cancel = function () {
-                        $modalInstance.dismiss('cancel');
-                    };
-                }];
-
-                var modalInstance = $modal.open({
-                    templateUrl: 'app/common/skills-infos-modal.html',
-                    controller: ModalInstanceCtrl
+                var modalInstance = $uibModal.open({
+                    templateUrl: 'app/common/skills-infos-modal.html'
                 });
 
                 return modalInstance.result;

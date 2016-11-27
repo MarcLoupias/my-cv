@@ -14,6 +14,7 @@
     - [Feature File Names : Y121](https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y121)
     - [Factory and Service Names : Y125](https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y125)
     - externalize directives templates into separated html files
+- angular-ui from `0.10.0` to `2.2.0`
 
 ## 0.1.4 (2014/03/04)
 
