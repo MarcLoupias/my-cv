@@ -49,84 +49,18 @@
     <div class="container hidden-xs">
         <div class="row">
             <div class="col-md-12">
-                <div class="well">
-                    <p ng-repeat="p in indexCtrl.gnrlInfos.introduction">{{p.text}}</p>
-                </div>
+                <cv-introduction-text data="indexCtrl.gnrlInfos.introduction"></cv-introduction-text>
             </div>
         </div>
     </div>
 
     <div class="container">
         <div class="row">
-
             <div class="col-md-3 hidden-xs">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <div class="panel-heading">
-                            <strong>{{indexCtrl.gnrlInfos.firstname}} {{indexCtrl.gnrlInfos.fullname}}</strong>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <div class="pull-left">
-                            <img ng-src="{{indexCtrl.gnrlInfos.photoUrl}}" class="img-rounded">
-                        </div>
-
-                        <div class="pull-right">
-                            <ul class="list-unstyled">
-                                <li>{{indexCtrl.gnrlInfos.age}}</li>
-                                <li>{{indexCtrl.gnrlInfos.location}}</li>
-                                <li>{{indexCtrl.gnrlInfos.drivingLicence}}</li>
-                                <li>{{indexCtrl.gnrlInfos.country}}</li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <div>
-                            <span><i class="glyphicon glyphicon-earphone"></i></span>
-                            {{indexCtrl.gnrlInfos.phone}}
-                        </div>
-                        <div>
-                            <span><i class="glyphicon glyphicon-envelope"></i></span>
-                            <a href="mailto:{{indexCtrl.gnrlInfos.email.mailto}}?subject={{indexCtrl.gnrlInfos.email.subject}}">
-                                {{indexCtrl.gnrlInfos.email.mailto}}
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <a href="{{indexCtrl.gnrlInfos.socialNetworks.github.url}}"
-                           title="{{indexCtrl.gnrlInfos.socialNetworks.github.urlTitle}}" target="_blank">
-                            <i class="icon-large icon-github"></i></a>
-                        <a href="{{indexCtrl.gnrlInfos.socialNetworks.linkedin.url}}"
-                           title="{{indexCtrl.gnrlInfos.socialNetworks.linkedin.urlTitle}}" target="_blank">
-                            <i class="icon-large icon-linked-in"></i></a>
-                        <a href="{{indexCtrl.gnrlInfos.socialNetworks.viadeo.url}}"
-                           title="{{indexCtrl.gnrlInfos.socialNetworks.viadeo.urlTitle}}" target="_blank">
-                            <i class="icon-large icon-spootify"></i></a>
-                    </div>
-                </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <span><strong>Situation professionnelle</strong> :</span>
-                        <span class="text-success"><strong>{{indexCtrl.gnrlInfos.employmentStatus}}</strong></span>
-                    </div>
-                </div>
-
+                <cv-personal-data data="indexCtrl.gnrlInfos"></cv-personal-data>
             </div>
 
-            <div class="col-md-9" ng-view="">
-            </div>
+            <div class="col-md-9" ng-view=""></div>
         </div>
     </div>
 

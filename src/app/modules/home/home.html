@@ -1,78 +1,14 @@
 
 <div class="row visible-xs">
     <div class="col-xs-12">
-        <div class="well">
-            <p ng-repeat="p in homeCtrl.gnrlInfos.introduction">{{p.text}}</p>
-        </div>
+        <cv-introduction-text data="indexCtrl.gnrlInfos.introduction"></cv-introduction-text>
     </div>
 </div>
 
 <div class="row visible-xs">
-
     <div class="col-xs-12">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <div class="panel-heading">
-                    homeCtrl
-                    <strong>{{homeCtrl.gnrlInfos.firstname}} {{homeCtrl.gnrlInfos.fullname}}</strong>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="panel panel-default">
-            <div class="panel-body">
-                <div class="pull-left">
-                    <img ng-src="{{homeCtrl.gnrlInfos.photoUrl}}" class="img-rounded">
-                </div>
-
-                <div class="pull-right">
-                    <ul class="list-unstyled">
-                        <li>{{homeCtrl.gnrlInfos.age}}</li>
-                        <li>{{homeCtrl.gnrlInfos.location}}</li>
-                        <li>{{homeCtrl.gnrlInfos.drivingLicence}}</li>
-                        <li>{{homeCtrl.gnrlInfos.country}}</li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="panel panel-default">
-            <div class="panel-body">
-                <div>
-                    <span><i class="glyphicon glyphicon-earphone"></i></span>
-                    {{homeCtrl.gnrlInfos.phone}}
-                </div>
-                <div>
-                    <span><i class="glyphicon glyphicon-envelope"></i></span>
-                    <a href="mailto:{{homeCtrl.gnrlInfos.email.mailto}}?subject={{homeCtrl.gnrlInfos.email.subject}}">
-                        {{homeCtrl.gnrlInfos.email.mailto}}
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="panel panel-default">
-            <div class="panel-body">
-                <a href="{{homeCtrl.gnrlInfos.socialNetworks.github.url}}" title="{{homeCtrl.gnrlInfos.socialNetworks.github.urlTitle}}" target="_blank">
-                    <i class="icon-large icon-github"></i></a>
-                <a href="{{homeCtrl.gnrlInfos.socialNetworks.linkedin.url}}" title="{{homeCtrl.gnrlInfos.socialNetworks.linkedin.urlTitle}}" target="_blank">
-                    <i class="icon-large icon-linked-in"></i></a>
-                <a href="{{homeCtrl.gnrlInfos.socialNetworks.viadeo.url}}" title="{{homeCtrl.gnrlInfos.socialNetworks.viadeo.urlTitle}}" target="_blank">
-                    <i class="icon-large icon-spootify"></i></a>
-            </div>
-        </div>
-
-        <div class="panel panel-default">
-            <div class="panel-body">
-                <span><strong>Situation professionnelle</strong> :</span>
-                <span class="text-success"><strong>{{homeCtrl.gnrlInfos.employmentStatus}}</strong></span>
-            </div>
-        </div>
-
+        <cv-personal-data data="homeCtrl.gnrlInfos"></cv-personal-data>
     </div>
-
 </div>
 
 <div class="row hidden-xs">
