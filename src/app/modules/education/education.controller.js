@@ -5,18 +5,18 @@
         .module('app.education')
         .controller('EducationController', EducationController);
 
-    EducationController.$inject = ['dataService'];
+    EducationController.$inject = ['dataService', '$log'];
 
-    function EducationController(dataService) {
+    function EducationController(dataService, $log) {
         var vm = this;
 
-        dataService.getJson()
-            .then(function (res) {
-                    vm.degrees = res.data.degrees;
-                }, function () {
-                    alert('c la fote a windoze !');
-                }
-            );
+        init();
+
+        function init() {
+            $log.debug('app.education.EducationController.init()', 'start');
+            vm.degrees = dataService.data.degrees;
+            $log.debug('app.education.EducationController.init()', 'end');
+        }
     }
 
 })(angular);

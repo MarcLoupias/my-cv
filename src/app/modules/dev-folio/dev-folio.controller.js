@@ -5,18 +5,18 @@
         .module('app.devFolio')
         .controller('DevFolioController', DevFolioController);
 
-    DevFolioController.$inject = ['dataService'];
+    DevFolioController.$inject = ['dataService', '$log'];
 
-    function DevFolioController(dataService) {
+    function DevFolioController(dataService, $log) {
         var vm = this;
 
-        dataService.getJson()
-            .then(function (res) {
-                    vm.devfolio = res.data.devfolio;
-                }, function () {
-                    alert('c la fote a windoze !');
-                }
-            );
+        init();
+
+        function init() {
+            $log.debug('app.devFolio.DevFolioController.init()', 'start');
+            vm.devfolio = dataService.data.devfolio;
+            $log.debug('app.devFolio.DevFolioController.init()', 'end');
+        }
     }
 
 })(angular);

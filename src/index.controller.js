@@ -5,22 +5,33 @@
         .module('app')
         .controller('IndexController', IndexController);
 
-    IndexController.$inject = ['dataService'];
+    IndexController.$inject = ['dataService', '$log', 'loaderService'];
 
-    function IndexController(dataService) {
+    function IndexController(dataService, $log, loaderService) {
         var vm = this;
 
-        vm.pending = true;
-        vm.isBurgerCollapsed = true;
+        init();
 
-        dataService.getJson()
-            .then(function (res) {
-                    vm.gnrlInfos = res.data.generalInformations;
-                    vm.pending = false;
-                }, function () {
-                    alert('c la fote a windoze !');
-                }
-            );
+        function init() {
+            $log.debug('app.IndexController.init()', 'start');
+
+            dataService.init()
+                .then(function initSuccess() {
+                    vm.gnrlInfos = dataService.data.gnrlInfos;
+                    $log.debug('app.IndexController.init()', 'dataService.init() loaded');
+                })
+                .catch(function initError() {
+                    $log.debug('app.IndexController.init()', 'dataService.init() error');
+                })
+                .finally(function initFinally() {
+                    loaderService.done();
+                });
+
+            vm.loader = loaderService;
+            vm.isBurgerCollapsed = true;
+
+            $log.debug('app.IndexController.init()', 'end');
+        }
     }
 
 })(angular);

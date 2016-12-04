@@ -3,12 +3,14 @@
 
     angular
         .module('app')
-        .run(runBlock);
+        .run(runWebapp);
 
-    runBlock.$inject = ['$log'];
+    runWebapp.$inject = ['$log', 'loaderService'];
 
-    function runBlock($log) {
-        $log.debug('runBlock end');
+    function runWebapp($log, loaderService) {
+        $log.debug('app.runWebapp()', 'start');
+        loaderService.start();
+        $log.debug('app.runWebapp()', 'end');
     }
 
 })(angular);

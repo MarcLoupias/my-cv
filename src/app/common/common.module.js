@@ -2,6 +2,8 @@
     'use strict';
 
     angular
-        .module('app.common', []);
+        .module('app.common', [
+            'app.common.loader'
+        ]);
 
 })(angular);

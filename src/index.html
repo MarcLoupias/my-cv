@@ -24,16 +24,20 @@
 
 <body ng-app="app" ng-controller="IndexController as indexCtrl">
 
-<div ng-if="indexCtrl.pending" class="container">
+<div ng-if="!indexCtrl.loader.isLoadingDone()" class="container">
     <div class="row">
         <div class="col-md-12">
-            <cv-loader></cv-loader>
+            <!--<cv-loader></cv-loader>-->
+            <div>
+                <img src="assets/images/loader.48x48-white.gif" alt="Loading" class="img-rounded center-block">
+                <h5 class="text-center">Chargement en cours ... <small>Veuillez patienter</small></h5>
+            </div>
         </div>
     </div>
 
 </div>
 
-<div ng-if="!indexCtrl.pending">
+<div ng-if="indexCtrl.loader.isLoadingDone()">
 
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 
@@ -133,7 +137,7 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <div class="pull-left">
-                            <img src="{{indexCtrl.gnrlInfos.photoUrl}}" class="img-rounded">
+                            <img ng-src="{{indexCtrl.gnrlInfos.photoUrl}}" class="img-rounded">
                         </div>
 
                         <div class="pull-right">

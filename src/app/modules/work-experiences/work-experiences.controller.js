@@ -5,18 +5,18 @@
         .module('app.workExperiences')
         .controller('WorkExperiencesController', WorkExperiencesController);
 
-    WorkExperiencesController.$inject = ['dataService'];
+    WorkExperiencesController.$inject = ['dataService', '$log'];
 
-    function WorkExperiencesController(dataService) {
+    function WorkExperiencesController(dataService, $log) {
         var vm = this;
 
-        dataService.getJson()
-            .then(function (res) {
-                    vm.jobs = res.data.jobs;
-                }, function () {
-                    alert('c la fote a windoze !');
-                }
-            );
+        init();
+
+        function init() {
+            $log.debug('app.workExperiences.WorkExperiencesController.init()', 'start');
+            vm.jobs = dataService.data.jobs;
+            $log.debug('app.workExperiences.WorkExperiencesController.init()', 'end');
+        }
     }
 
 })(angular);

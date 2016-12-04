@@ -5,22 +5,20 @@
         .module('app.skills')
         .controller('SkillsController', SkillsController);
 
-    SkillsController.$inject = ['skillsInfosModal', 'dataService'];
+    SkillsController.$inject = ['skillsInfosModal', 'dataService', '$log'];
 
-    function SkillsController(skillsInfosModal, dataService) {
+    function SkillsController(skillsInfosModal, dataService, $log) {
         var vm = this;
 
-        dataService.getJson()
-            .then(function (res) {
-                    vm.skillCategories = res.data.skillCategories;
-                }, function () {
-                    alert('c la fote a windoze !');
-                }
-            );
+        init();
 
-        vm.displaySkillLegend = function () {
-            skillsInfosModal.displaySkillsInfos();
-        };
+        function init() {
+            $log.debug('app.skills.SkillsController.init()', 'start');
+            vm.displaySkillLegend = skillsInfosModal.displaySkillsInfos;
+
+            vm.skillCategories = dataService.data.skillCategories;
+            $log.debug('app.skills.SkillsController.init()', 'end');
+        }
     }
 
 })(angular);

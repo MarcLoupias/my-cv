@@ -5,24 +5,22 @@
         .module('app.home')
         .controller('MainController', MainController);
 
-    MainController.$inject = ['skillsInfosModal', 'dataService'];
+    MainController.$inject = ['skillsInfosModal', 'dataService', '$log'];
 
-    function MainController(skillsInfosModal, dataService) {
+    function MainController(skillsInfosModal, dataService, $log) {
         var vm = this;
 
-        dataService.getJson()
-            .then(function (res) {
-                    vm.gnrlInfos = res.data.generalInformations;
-                    vm.jobs = res.data.jobs;
-                    vm.skillCategories = res.data.skillCategories;
-                }, function () {
-                    alert('c la fote a windoze !');
-                }
-            );
+        init();
 
-        vm.displaySkillLegend = function () {
-            skillsInfosModal.displaySkillsInfos();
-        };
+        function init() {
+            $log.debug('app.home.MainController.init()', 'start');
+            vm.displaySkillLegend = skillsInfosModal.displaySkillsInfos;
+
+            vm.gnrlInfos = dataService.data.gnrlInfos;
+            vm.jobs = dataService.data.jobs;
+            vm.skillCategories = dataService.data.skillCategories;
+            $log.debug('app.home.MainController.init()', 'end');
+        }
     }
 
 })(angular);

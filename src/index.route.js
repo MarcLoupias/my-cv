@@ -7,7 +7,7 @@
 
     function routeConfig($routeProvider) {
         $routeProvider
-            .when('/', {
+            .when('/home', {
                 templateUrl: 'app/modules/home/home.html',
                 controller: 'MainController',
                 controllerAs: 'homeCtrl'
@@ -33,7 +33,7 @@
                 controllerAs: 'devCtrl'
             })
             .otherwise({
-                redirectTo: '/'
+                redirectTo: '/home'
             });
     }
 
