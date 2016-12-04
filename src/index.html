@@ -39,72 +39,7 @@
 
 <div ng-if="indexCtrl.loader.isLoadingDone()">
 
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-
-        <div class="container-fluid">
-
-            <div class="navbar-header">
-
-                <button type="button" class="navbar-toggle"
-                        ng-click="indexCtrl.isBurgerCollapsed = !indexCtrl.isBurgerCollapsed"
-                        aria-expanded="false" aria-controls="burger">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-                <a class="navbar-brand" href="#/">{{indexCtrl.gnrlInfos.cvTitle}}</a>
-
-            </div>
-
-            <div class="collapse" id="burger" uib-collapse="indexCtrl.isBurgerCollapsed">
-
-                <ul class="nav navbar-nav">
-                    <li class="divider"></li>
-                    <li>
-                        <a href="#/experiences"><b>Expériences</b></a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a href="#/skills"><b>Compétences</b></a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a href="#/education"><b>Formations</b></a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a href="#/devfolio"><b>Devfolio</b></a>
-                    </li>
-                    <li class="divider"></li>
-                </ul>
-
-            </div>
-
-            <ul class="nav navbar-nav hidden-xs">
-                <li class="divider"></li>
-                <li>
-                    <a href="#/experiences"><b>Expériences</b></a>
-                </li>
-                <li class="divider"></li>
-                <li>
-                    <a href="#/skills"><b>Compétences</b></a>
-                </li>
-                <li class="divider"></li>
-                <li>
-                    <a href="#/education"><b>Formations</b></a>
-                </li>
-                <li class="divider"></li>
-                <li>
-                    <a href="#/devfolio"><b>Devfolio</b></a>
-                </li>
-                <li class="divider"></li>
-            </ul>
-
-        </div>
-
-    </div>
+    <cv-navbar></cv-navbar>
 
     <div class="container">
         <div class="row"><br/></div>

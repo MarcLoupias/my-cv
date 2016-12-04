@@ -7,7 +7,7 @@
 
             'app.common',
 
-            'app.home', 'app.devFolio', 'app.skills', 'app.workExperiences', 'app.education'
+            'app.home', 'app.devFolio', 'app.skills', 'app.workExperiences', 'app.education', 'app.navbar'
         ]);
 
 })(angular);
