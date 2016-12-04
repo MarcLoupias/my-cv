@@ -20,12 +20,10 @@ module.exports = function (config) {
     ],
     files: listFiles(),
     preprocessors: {
-      [conf.path.src('**/*.html')]: [
-        'ng-html2js'
-      ]
+        '**/*.html': ['ng-html2js']
     },
     ngHtml2JsPreprocessor: {
-      stripPrefix: `${conf.paths.src}/`,
+      stripPrefix: 'src/',
       moduleName: 'app'
     },
     angularFilesort: {
