@@ -2,12 +2,12 @@
     'use strict';
 
     angular
-        .module('app.common')
+        .module('app.common.skills')
         .directive('cvSkillBadgeLevel', cvSkillBadgeLevelDirective);
 
     function cvSkillBadgeLevelDirective() {
         return {
-            templateUrl: 'app/common/cv-skill-badge-level.html',
+            templateUrl: 'app/common/skills/cv-skill-badge-level.html',
             restrict: 'E',
             scope: {
                 level: '=level'

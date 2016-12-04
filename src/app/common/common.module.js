@@ -3,7 +3,8 @@
 
     angular
         .module('app.common', [
-            'app.common.loader'
+            'app.common.loader',
+            'app.common.skills'
         ]);
 
 })(angular);

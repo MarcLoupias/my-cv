@@ -2,12 +2,12 @@
     'use strict';
 
     angular
-        .module('app.common')
+        .module('app.common.skills')
         .directive('cvSkillGroupShort', cvSkillGroupShortDirective);
 
     function cvSkillGroupShortDirective() {
         return {
-            templateUrl: 'app/common/cv-skill-group-short.html',
+            templateUrl: 'app/common/skills/cv-skill-group-short.html',
             restrict: 'E',
             scope: {
                 skillGroup: '=skillGroup'

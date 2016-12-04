@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('app.common')
+        .module('app.common.skills')
         .factory('skillBadgeHelper', skillBadgeHelperService);
 
     function skillBadgeHelperService() {
