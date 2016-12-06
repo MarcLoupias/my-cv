@@ -2,10 +2,10 @@
     <div class="panel-body">
         <p><strong>{{project.name}}</strong>
             <span class="pull-right">
-                <a href="{{project.deployedProjectUrl}}" title="{{project.deployedProjectUrlTitle}}" target="_blank">
+                <a ng-href="{{project.deployedProjectUrl}}" title="{{project.deployedProjectUrlTitle}}" target="_blank">
                     <i class="icon-large icon-link"></i>
                 </a>
-                <a ng-repeat="repo in project.githubRepoList" href="{{repo.repoUrl}}" title="{{repo.repoUrlTitle}}"
+                <a ng-repeat="repo in project.githubRepoList" ng-href="{{repo.repoUrl}}" title="{{repo.repoUrlTitle}}"
                    target="_blank">
                     <i class="icon-large icon-github"></i>
                 </a>
