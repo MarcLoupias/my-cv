@@ -1,12 +1,12 @@
 {
     "generalInformations": {
-        "version":"0.1.4",
-        "websiteSourceCodeUrl":"https://github.com/MarcLoupias/my-cv/releases/tag/0.1.4",
+        "version":"0.2.0",
+        "websiteSourceCodeUrl":"https://github.com/MarcLoupias/my-cv/releases/tag/0.2.0",
         "cvTitle":"Développeur web Full Stack",
         "firstname":"Marc",
         "fullname":"Loupias",
         "photoUrl":"assets/images/bibi.150x161.png",
-        "age":"32 ans",
+        "age":"35 ans",
         "location":"Paris",
         "country":"France",
         "drivingLicence":"Permis B",
@@ -31,16 +31,48 @@
                 }
             }
         },
-        "employmentStatus":"Disponible ASAP",
+        "employmentStatus":"Indisponible",
         "introduction":[
-            {"text":"Après une expérience significative chez un éditeur de logiciel, j'ai décidé il y a deux ans de changer de technologie en passant du client lourd (Windev) au développement web (Java J2EE)."},
-            {"text":"Récemment installé en région parisienne, je cherche aujourd'hui des missions avec les dernières technologies web, plus particulièrement AngularJs et Bootstrap."},
-            {"text":"Les techniques de développement frontend évoluent très vite depuis quelques années. Les possibilités offertes hier aux seuls clients lourds sont ouvertes au web. Avec le responsive design de Bootstrap couplé à la puissance d'AngularJs il est désormais possible de créer des applications de gestion en client léger qui n'ont rien à envier aux anciennes, et le tout sur n'importe quel périphérique, disponibles n'importe où n'importe quand."},
+            {"text":"Après une expérience significative chez un éditeur de logiciel, j'ai décidé en 2011 de changer de technologie en passant du client lourd au développement web."},
+            {"text":"Installé durablement en région parisienne, je cherche à perfectionner mes connaissances sur les dernières technologies web et les pratiques devops."},
+            {"text":"Ces dernières années, j'ai particulièrement été marqué par ces évolutions, ainsi que par l'agile et le mouvement Software Craftmanship."},
             {"text":"Je souhaite m'inscrire dans ce mouvement."}
         ]
     },
 
     "jobs": [
+        {
+            "position": "Tech lead AngularJS",
+            "company": "Banque de France, Paris",
+            "logoUrl":"assets/images/logos/logo-banque-de-france.150x150.png",
+            "period": "(juin 2015 à aujourd'hui)",
+            "companyUrl": "https://www.banque-france.fr",
+            "companyUrlTitle": "Banque de France",
+            "jobDescription": "Tech lead frontend sur le programme FIBRE.",
+            "tasks": [
+                {"desc":"Programme FIBRE : Scaffold du projet frontend (AngularJS, angular-material, gulp, npm, svn/git)."},
+                {"desc":"Rédaction de documents de normes et d'aide au développement."},
+                {"desc":"Conseil et qualification sur la rédaction des spécifications techniques."},
+                {"desc":"Revues de code et qualification des développements du centre de service."},
+                {"desc":"Projet Espace Entreprise : Tech lead opérationnel (AngularJS, Bootstrap, gulp, npm, git)."},
+                {"desc":"Projet Espace Entreprise : Encadrement de deux développeurs frontend juniors."}
+            ]
+        },
+        {
+            "position": "Consultant AngularJS",
+            "company": "Pages Jaunes, Sèvres (92)",
+            "logoUrl":"assets/images/logos/logo-pagesjaunes.150x150.png",
+            "period": "(avril 2014 à juin 2015)",
+            "companyUrl": "http://www.pagesjaunes.fr",
+            "companyUrlTitle": "Pages Jaunes",
+            "jobDescription": "Développement et maintenance sur la refonte de l'application web mobile responsive (site à fort trafic).",
+            "tasks": [
+                {"desc":"Développement et maintenance sur la partie Javascript de la webapp. (AngularJS, RequireJS, npm, bower, grunt, git)."},
+                {"desc":"Migration d'un fork de cette webapp à Cordova sur Android."},
+                {"desc":"Sprints de deux semaines : scrum quotidien, planning meetings, retros."},
+                {"desc":"Revues de code bilatérales."}
+            ]
+        },
         {
             "position": "Consultant Java/J2EE web",
             "company": "BK-Consulting, Paris",
@@ -50,8 +82,8 @@
             "companyUrlTitle": "BK Consulting",
             "jobDescription": "Développement de deux applications web au forfait en mode agile (SCRUM) dans le domaine de l'hotellerie.",
             "tasks": [
-                {"desc":"Développement en Java et SQL des serveurs d'applications (Play! et MySQL)"},
-                {"desc":"Développement du frontend avec Bootstrap et AngularJs"}
+                {"desc":"Développement en Java et SQL des serveurs d'applications (Play!, MySQL, git)."},
+                {"desc":"Développement du frontend (AngularJS, Bootstrap, git)."}
             ]
         },
         {
@@ -61,10 +93,10 @@
             "period": "(nov. 2012 à jan. 2013)",
             "companyUrl": "http://www.scaledrisk.com/",
             "companyUrlTitle": "Scaled Risk",
-            "jobDescription": "Développement des web services et du frontend d'une solution Big Data",
+            "jobDescription": "Développement des web services et du frontend d'une solution Big Data.",
             "tasks": [
-                {"desc":"Couche services (Java, Apache Thrift)"},
-                {"desc":"Couche web (intranet) (RIA : HTML5, CSS2, Javascript)"}
+                {"desc":"Couche services (Java, Apache Thrift)."},
+                {"desc":"Couche web (intranet) (RIA : HTML5, CSS2, Javascript)."}
             ]
         },
         {
@@ -96,7 +128,8 @@
                 {"name":"Langages","skills":[{"name":"Bash","level":1},{"name":"perl","level":1}]},
                 {"name":"Protocoles","skills":[{"name":"HTTP","level":2},{"name":"FTP","level":3},{"name":"DNS","level":2},{"name":"TLS","level":1}]},
                 {"name":"Serveurs web","skills":[{"name":"Apache","level":2},{"name":"Tomcat","level":1}]},
-                {"name":"PaaS","skills":[{"name":"Plateforme Heroku","level":2,"skillUrl":"https://www.heroku.com/","skillUrlTitle":"www.heroku.com"}]}
+                {"name":"PaaS","skills":[{"name":"Plateforme Heroku","level":2,"skillUrl":"https://www.heroku.com/","skillUrlTitle":"www.heroku.com"}]},
+                {"name":"SCM","skills":[{"name":"Subversion","level":2},{"name":"GIT","level":3}]}
             ]
         },
         {
@@ -111,12 +144,13 @@
         {
             "name": "Backend",
             "skillGroups": [
-                {"name":"Langages","skills":[{"name":"Java","level":2}]},
+                {"name":"Langages","skills":[{"name":"Java6","level":2}]},
                 {"name":"Outils","skills":[{"name":"IntelliJ","level":2},{"name":"Eclipse","level":2}]},
-                {"name":"Frameworks","skills":[{"name":"Play!","level":2},{"name":"Google Guice","level":2}]},
+                {"name":"Frameworks","skills":[{"name":"Play!","level":2},{"name":"NodeJS","level":1}]},
                 {"name":"Librairies","skills":[
-                    {"name":"Apache Commons","level":2},{"name":"Javamail","level":2},
-                    {"name":"BouncyCastle","level":2},{"name":"Jackson","level":2}]
+                    {"name":"Apache Commons","level":2},{"name":"Javamail","level":2},{"name":"Google Guice","level":2},
+                    {"name":"BouncyCastle","level":2},{"name":"Jackson","level":2}
+                ]
                 },
                 {"name":"Tests","skills":[{"name":"JUnit","level":2},{"name":"Mockito","level":2},{"name":"RestAssured","level":2}]}
             ]
@@ -124,10 +158,33 @@
         {
             "name": "Frontend",
             "skillGroups": [
-                {"name":"Langages","skills":[{"name":"HTML5","level":2},{"name":"CSS","level":2},{"name":"Javascript","level":2}]},
-                {"name":"Outils","skills":[{"name":"Yeoman","level":2},{"name":"Bower","level":2},{"name":"Grunt","level":2}]},
-                {"name":"Frameworks","skills":[{"name":"Bootstrap","level":2},{"name":"AngularJs","level":2}]},
-                {"name":"Tests","skills":[{"name":"Karma","level":2},{"name":"Jasmine","level":2},{"name":"QUnit","level":1}]}
+                {
+                    "name":"Langages",
+                    "skills":[
+                        {"name":"HTML5","level":2},{"name":"CSS","level":2},{"name":"ES5","level":3},
+                        {"name":"ES6","level":1}
+                    ]
+                },
+                {
+                    "name":"Outils",
+                    "skills":[
+                        {"name":"Webstorm","level":3}, {"name":"Yeoman","level":2},{"name":"Bower","level":3},
+                        {"name":"npm","level":3},{"name":"Grunt","level":2},{"name":"Gulp","level":2}
+                    ]
+                },
+                {
+                    "name":"Frameworks",
+                    "skills":[
+                        {"name":"Bootstrap","level":2},{"name":"angular-material","level":2},
+                        {"name":"AngularJs (1.x)","level":3}
+                    ]
+                },
+                {
+                    "name":"Tests",
+                    "skills":[
+                        {"name":"Karma","level":2},{"name":"Jasmine","level":3},{"name":"QUnit","level":1}
+                    ]
+                }
             ]
         },
         {
@@ -135,13 +192,23 @@
             "skillGroups": [
                 {"name":"Analyse","skills":[{"name":"Merise","level":3}]},
                 {"name":"Conception","skills":[
-                    {"name":"UML","level":1},{"name":"SOA","level":2},{"name":"Injection de dépendances","level":2},
+                    {"name":"UML","level":1},{"name":"SOA","level":2},{"name":"Injection de dépendances","level":3},
                     {"name":"Design patterns usuels","level":2}
                 ]},
                 {"name":"Méthodologies","skills":[
                     {"name":"La RACHE","level":4,"skillUrl":"http://www.byatoo.com/la-rache/","skillUrlTitle":"site web de la R.A.C.H.E."},
-                    {"name":"SCRUM","level":2,"skillUrl":"https://www.scrum.org/","skillUrlTitle":"www.scrum.org"}
-                ]}
+                    {"name":"Cycle en V","level":2},
+                    {"name":"Agile (SCRUM)","level":3,"skillUrl":"https://www.scrum.org/","skillUrlTitle":"www.scrum.org"},
+                    {"name":"Agile (Extreme Programming)","level":2}
+                ]},
+                {"name":"Qualité","skills":[{"name":"SonarQUBE","level":2}]},
+                {
+                    "name":"Pratiques",
+                    "skills":[
+                        {"name":"Continuous Integration","level":3},{"name":"Continuous Delivery","level":3},
+                        {"name":"Continuous Deployment","level":1},{"name":"Feature flipping","level":2}
+                    ]
+                }
             ]
         },
         {
