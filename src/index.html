@@ -27,7 +27,6 @@
 <div ng-if="!indexCtrl.loader.isLoadingDone()" class="container">
     <div class="row">
         <div class="col-md-12">
-            <!--<cv-loader></cv-loader>-->
             <div>
                 <img src="assets/images/loader.48x48-white.gif" alt="Loading" class="img-rounded center-block">
                 <h5 class="text-center">Chargement en cours ... <small>Veuillez patienter</small></h5>
@@ -45,22 +44,9 @@
         <div class="row"><br/></div>
     </div>
 
-    <!-- application content here -->
-    <div class="container hidden-xs">
-        <div class="row">
-            <div class="col-md-12">
-                <cv-introduction-text data="indexCtrl.gnrlInfos.introduction"></cv-introduction-text>
-            </div>
-        </div>
-    </div>
-
     <div class="container">
         <div class="row">
-            <div class="col-md-3 hidden-xs">
-                <cv-personal-data data="indexCtrl.gnrlInfos"></cv-personal-data>
-            </div>
-
-            <div class="col-md-9" ng-view=""></div>
+            <div class="col-md-12" ng-view=""></div>
         </div>
     </div>
 

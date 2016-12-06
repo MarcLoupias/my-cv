@@ -10,23 +10,25 @@
         "location":"Paris",
         "country":"France",
         "drivingLicence":"Permis B",
-        "phone":"sur demande par email",
-        "email":{
-            "mailto":"pro@marc-loupias.fr",
-            "subject":"Développeur web Full Stack"
-        },
-        "socialNetworks": {
-            "github": {
-                "url":"https://github.com/MarcLoupias",
-                "urlTitle":"profil GitHub"
+        "contact": {
+            "phone":"sur demande par email",
+            "email":{
+                "mailto":"pro@marc-loupias.fr",
+                "subject":"Développeur web Full Stack"
             },
-            "linkedin": {
-                "url":"http://fr.linkedin.com/pub/marc-loupias/91/714/4aa/",
-                "urlTitle":"profil linkedin"
-            },
-            "viadeo": {
-                "url":"http://www.viadeo.com/fr/profile/marc.loupias",
-                "urlTitle":"profil viadeo"
+            "socialNetworks": {
+                "github": {
+                    "url":"https://github.com/MarcLoupias",
+                    "urlTitle":"profil GitHub"
+                },
+                "linkedin": {
+                    "url":"http://fr.linkedin.com/pub/marc-loupias/91/714/4aa/",
+                    "urlTitle":"profil linkedin"
+                },
+                "viadeo": {
+                    "url":"http://www.viadeo.com/fr/profile/marc.loupias",
+                    "urlTitle":"profil viadeo"
+                }
             }
         },
         "employmentStatus":"Disponible ASAP",

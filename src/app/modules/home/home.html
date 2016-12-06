@@ -1,48 +1,66 @@
 
-<div class="row visible-xs">
-    <div class="col-xs-12">
-        <cv-introduction-text data="indexCtrl.gnrlInfos.introduction"></cv-introduction-text>
+<!--Mobile-->
+
+<div class="visible-xs">
+    <div class="row">
+        <div class="col-xs-12">
+            <cv-personal-data data="homeCtrl.gnrlInfos"></cv-personal-data>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <cv-introduction-text data="indexCtrl.gnrlInfos.introduction"></cv-introduction-text>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <cv-contact data="homeCtrl.gnrlInfos.contact"></cv-contact>
+        </div>
     </div>
 </div>
 
-<div class="row visible-xs">
-    <div class="col-xs-12">
-        <cv-personal-data data="homeCtrl.gnrlInfos"></cv-personal-data>
+<!--Desktop-->
+
+<div class="hidden-xs">
+    <div class="row">
+        <div class="col-md-12">
+            <cv-introduction-text data="indexCtrl.gnrlInfos.introduction"></cv-introduction-text>
+        </div>
     </div>
-</div>
 
-<div class="row hidden-xs">
+    <div class="row">
+        <div class="col-md-4">
+            <cv-personal-data data="indexCtrl.gnrlInfos"></cv-personal-data>
 
-    <div class="col-md-6">
-
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <div class="panel-heading"><strong>Expériences</strong></div>
-            </div>
+            <cv-contact data="indexCtrl.gnrlInfos.contact"></cv-contact>
         </div>
 
-        <cv-experience-short ng-repeat="job in homeCtrl.jobs" job="job"></cv-experience-short>
-
-    </div>
-
-    <div class="col-md-6">
-
-        <div class="panel panel-default">
-            <div class="panel-heading panel-heading-overflow">
-
-                <strong>Compétences</strong>
-
-                <div class="btn-group btn-group-sm pull-right">
-                    <button type="button" class="btn btn-default" title="Légende" ng-click="homeCtrl.displaySkillLegend()">
-                        Légende <span class="glyphicon glyphicon-info-sign"></span>
-                    </button>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel-heading"><strong>Expériences</strong></div>
                 </div>
-
             </div>
+
+            <cv-experience-short ng-repeat="job in homeCtrl.jobs" job="job"></cv-experience-short>
         </div>
 
-        <cv-skill-category-short ng-repeat="skillCategory in homeCtrl.skillCategories" skill-category="skillCategory"></cv-skill-category-short>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading panel-heading-overflow">
+                    <strong>Compétences</strong>
 
+                    <div class="btn-group btn-group-sm pull-right">
+                        <button type="button" class="btn btn-default" title="Légende" ng-click="homeCtrl.displaySkillLegend()">
+                            Légende <span class="glyphicon glyphicon-info-sign"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <cv-skill-category-short ng-repeat="skillCategory in homeCtrl.skillCategories" skill-category="skillCategory"></cv-skill-category-short>
+        </div>
     </div>
-
 </div>

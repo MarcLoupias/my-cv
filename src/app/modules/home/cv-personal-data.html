@@ -26,35 +26,6 @@
 
     <div class="panel panel-default">
         <div class="panel-body">
-            <div>
-                <span><i class="glyphicon glyphicon-earphone"></i></span>
-                {{persoDataCtrl.data.phone}}
-            </div>
-            <div>
-                <span><i class="glyphicon glyphicon-envelope"></i></span>
-                <a href="mailto:{{persoDataCtrl.data.email.mailto}}?subject={{persoDataCtrl.data.email.subject}}">
-                    {{persoDataCtrl.data.email.mailto}}
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="panel panel-default">
-        <div class="panel-body">
-            <a href="{{persoDataCtrl.data.socialNetworks.github.url}}"
-               title="{{persoDataCtrl.data.socialNetworks.github.urlTitle}}" target="_blank">
-                <i class="icon-large icon-github"></i></a>
-            <a href="{{persoDataCtrl.data.socialNetworks.linkedin.url}}"
-               title="{{persoDataCtrl.data.socialNetworks.linkedin.urlTitle}}" target="_blank">
-                <i class="icon-large icon-linked-in"></i></a>
-            <a href="{{persoDataCtrl.data.socialNetworks.viadeo.url}}"
-               title="{{persoDataCtrl.data.socialNetworks.viadeo.urlTitle}}" target="_blank">
-                <i class="icon-large icon-spootify"></i></a>
-        </div>
-    </div>
-
-    <div class="panel panel-default">
-        <div class="panel-body">
             <span><strong>Situation professionnelle</strong> :</span>
             <span class="text-success"><strong>{{persoDataCtrl.data.employmentStatus}}</strong></span>
         </div>

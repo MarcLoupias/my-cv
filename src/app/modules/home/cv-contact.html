@@ -1,0 +1,30 @@
+<div>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div>
+                <span><i class="glyphicon glyphicon-earphone"></i></span>
+                {{contactCtrl.data.phone}}
+            </div>
+            <div>
+                <span><i class="glyphicon glyphicon-envelope"></i></span>
+                <a href="mailto:{{contactCtrl.data.email.mailto}}?subject={{contactCtrl.data.email.subject}}">
+                    {{contactCtrl.data.email.mailto}}
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <a href="{{contactCtrl.data.socialNetworks.github.url}}"
+               title="{{contactCtrl.data.socialNetworks.github.urlTitle}}" target="_blank">
+                <i class="icon-large icon-github"></i></a>
+            <a href="{{contactCtrl.data.socialNetworks.linkedin.url}}"
+               title="{{contactCtrl.data.socialNetworks.linkedin.urlTitle}}" target="_blank">
+                <i class="icon-large icon-linked-in"></i></a>
+            <a href="{{contactCtrl.data.socialNetworks.viadeo.url}}"
+               title="{{contactCtrl.data.socialNetworks.viadeo.urlTitle}}" target="_blank">
+                <i class="icon-large icon-spootify"></i></a>
+        </div>
+    </div>
+</div>
