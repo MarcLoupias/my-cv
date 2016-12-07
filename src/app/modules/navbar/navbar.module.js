@@ -2,6 +2,8 @@
     'use strict';
 
     angular
-        .module('app.navbar', []);
+        .module('app.navbar', [
+            'app.navbar.burgerMenu'
+        ]);
 
 })(angular);
