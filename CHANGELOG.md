@@ -11,6 +11,7 @@
     - [Manual dependencies identification : Y091](https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y091)
     - controllerAs syntax with vm : [Y030](https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y030) [Y031](https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y031) [Y032](https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y032)
     - [Unique Directive Prefix (`cv-`) : Y073](https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y073)
+    - [Directives and ControllerAs : Y075](https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y075)
     - [Feature File Names : Y121](https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y121)
     - [Factory and Service Names : Y125](https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y125)
     - externalize directives templates into separated html files

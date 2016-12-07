@@ -12,12 +12,23 @@
             scope: {
                 level: '=level'
             },
-            controller: ['$scope', 'skillBadgeHelper', function ($scope, skillBadgeHelper) {
-                $scope.badgeHelperService = skillBadgeHelper;
-                $scope.title = $scope.badgeHelperService.getBadgeTitle($scope.level);
-                $scope.text = $scope.badgeHelperService.getBadgeText($scope.level);
-            }]
+            replace: true,
+            controller: CvSkillBadgeLevelController,
+            controllerAs: 'badgeLevelCtrl',
+            bindToController: true
         };
+    }
+
+    CvSkillBadgeLevelController.$inject = ['skillBadgeHelper'];
+
+    function CvSkillBadgeLevelController(skillBadgeHelper) {
+        var vm = this;
+
+        init();
+
+        function init() {
+            vm.badgeHelperService = skillBadgeHelper;
+        }
     }
 
 })(angular);

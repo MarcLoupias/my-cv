@@ -11,10 +11,7 @@
             restrict: 'E',
             scope: {
                 project: '=project'
-            },
-            controller: ['$scope', function ($scope) {
-
-            }]
+            }
         };
     }
 
