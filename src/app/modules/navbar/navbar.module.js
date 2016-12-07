@@ -3,7 +3,8 @@
 
     angular
         .module('app.navbar', [
-            'app.navbar.burgerMenu'
+            'app.navbar.burgerMenu',
+            'app.navbar.desktopMenu'
         ]);
 
 })(angular);
