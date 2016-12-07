@@ -13,14 +13,14 @@
         };
 
         function getBadgeClass(level) {
-            if (level === undefined || level === null) {
+            if (!level) {
                 return '';
             }
             return 'skill-badge-lvl-' + level;
         }
 
         function getBadgeTitle(level) {
-            if (level === undefined || level === null) {
+            if (!level) {
                 return '';
             }
 
@@ -44,7 +44,7 @@
         }
 
         function getBadgeText(level) {
-            if (level === undefined || null) {
+            if (!level) {
                 return '';
             }
 
