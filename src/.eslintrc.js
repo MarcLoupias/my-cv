@@ -3,7 +3,7 @@ module.exports = {
         'angular'
     ],
     rules: {
-        'indent': ['error', 4],
-        'angular/no-service-method': 0
+        'indent': ['error', 4, {'SwitchCase': 1}],
+        'padded-blocks': 'off'
     }
 };
