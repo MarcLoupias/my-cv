@@ -1,10 +1,9 @@
 <div class="panel panel-default">
     <div class="panel-body">
         <h4><strong>{{degree.name}}</strong></h4>
-        <h4>{{degree.school}}
+        <h4><span>{{degree.school}}</span>
             <small>{{degree.period}}</small>
-            <a ng-if="(degree.schoolUrl != undefined)" href="{{degree.schoolUrl}}" title="{{degree.schoolUrlTitle}}"
-               target="_blank">
+            <a ng-if="degree.schoolUrl" ng-href="{{degree.schoolUrl}}" title="{{degree.schoolUrlTitle}}" target="_blank">
                 <i class="icon-large icon-link"></i>
             </a>
         </h4>
