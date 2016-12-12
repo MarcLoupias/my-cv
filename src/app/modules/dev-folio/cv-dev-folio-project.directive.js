@@ -7,7 +7,7 @@
 
     function cvDevFolioProjectDirective() {
         return {
-            templateUrl: 'app/modules/dev-folio/dev-folio-project.html',
+            templateUrl: 'app/modules/dev-folio/cv-dev-folio-project.html',
             restrict: 'E',
             scope: {
                 project: '=project'
