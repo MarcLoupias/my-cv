@@ -228,6 +228,8 @@
             "name":"Ingénieur systèmes et logiciels (Non-obtenu, en cours)",
             "school":"CNAM, Toulouse (31)",
             "period":"(2012)",
+            "schoolUrl":"http://formation.cnam.fr/rechercher-par-domaine/ingenieur-diplome-du-conservatoire-national-des-arts-et-metiers-par-la-formation-continue-specialite-informatique-parcours-architecture-et-ingenierie-des-systemes-et-des-logiciels-aisl--200672.kjsp",
+            "schoolUrlTitle": "visiter la fiche de formation du CNAM",
             "degreeDescription": [
                 {"desc":"POO, Design Pattern du GoF"}, {"desc":"Programmation Orientée Aspect"}, {"desc":"Java6"},
                 {"desc":"Droit des entreprises"}, {"desc":"Comptabilité et gestion dentreprise"},
@@ -238,6 +240,8 @@
             "name":"Concepteur-Développeur",
             "school":"AFPA, Beaumont (63)",
             "period":"(nov. 2011)",
+            "schoolUrl": "https://www.afpa.fr/formation-qualifiante/concepteur-developpeur-informatique",
+            "schoolUrlTitle": "visiter la fiche de formation de l'AFPA",
             "degreeDescription": [
                 {"desc":"UML 2.0"}, {"desc":"SQL"}, {"desc":"POO, Design Pattern du GoF"}, {"desc":"Java6"}
             ]
@@ -245,7 +249,7 @@
         {
             "name":"Développeur informatique",
             "school":"AFPA, Béziers (34)",
-            "period":"(avril 2005 à mars 2006)",
+            "period":"(avril 2005 à mars 2006) (Cette formation n'existe plus.)",
             "degreeDescription": [
                 {"desc":"Merise"}, {"desc":"UML 1.1"},{"desc":"SQL, TransactSQL"},{"desc":".NET 1.1, Visual Basic"},
                 {"desc":"Java5"},{"desc":"HTML, CSS, Javascript"}
