@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const HubRegistry = require('gulp-hub');
 const browserSync = require('browser-sync');
+const coveralls = require('gulp-coveralls');
 
 const conf = require('./conf/gulp.conf');
 
@@ -11,13 +12,15 @@ const hub = new HubRegistry([conf.path.tasks('*.js')]);
 gulp.registry(hub);
 
 gulp.task('inject', gulp.series(gulp.parallel('styles', 'scripts'), 'inject'));
-gulp.task('build', gulp.series('clean', 'test', 'partials', gulp.parallel('other', 'inject'), 'build'));
+gulp.task('build:local', gulp.series('clean', 'test', 'partials', gulp.parallel('other', 'inject'), 'build'));
+gulp.task('build', gulp.series('clean', 'test', 'coveralls', 'partials', gulp.parallel('other', 'inject'), 'build'));
 gulp.task('test', gulp.series('scripts', 'karma:single-run'));
 gulp.task('test:auto', gulp.series('watch', 'karma:auto-run'));
 gulp.task('serve', gulp.series('clean', 'inject', 'watch', 'browsersync'));
 gulp.task('serve:dist', gulp.series('default', 'browsersync:dist'));
 gulp.task('default', gulp.series('clean', 'build'));
 gulp.task('watch', watch);
+gulp.task('coveralls', execCoveralls);
 
 function reloadBrowserSync(cb) {
   browserSync.reload();
@@ -36,4 +39,9 @@ function watch(done) {
   ], gulp.series('styles'));
   gulp.watch(conf.path.src('**/*.js'), gulp.series('inject'));
   done();
+}
+
+function execCoveralls() {
+    return gulp.src('coverage/**/lcov.info')
+        .pipe(coveralls());
 }
