@@ -9,3 +9,4 @@ script: npm build
 branches:
   only:
   - master
+after_failure: "cat /home/travis/build/MarcLoupias/my-cv/npm-debug.log"
