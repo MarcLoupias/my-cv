@@ -1,10 +1,12 @@
 language: node_js
 node_js:
   - 4.4
+before_install:
+  - npm install -g npm@3.10.5
+  - npm install -g bower@1.7.9
 install:
   - npm install
-before_script:
-  - npm install -g gulp
+  - bower install
 script: npm build
 branches:
   only:
