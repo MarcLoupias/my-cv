@@ -22,7 +22,7 @@ module.exports = function (config) {
         reporters: ['progress', 'coverage'],
         preprocessors: {
             '**/*.html': ['ng-html2js'],
-            '.tmp/**/*.js': ['coverage']
+            'src/**/*.js': ['coverage']
         },
         ngHtml2JsPreprocessor: {
             stripPrefix: 'src/',
@@ -30,7 +30,7 @@ module.exports = function (config) {
         },
         angularFilesort: {
             whitelist: [
-                conf.path.tmp('**/!(*.html|*.spec|*.mock).js')
+                conf.path.src('**/!(*.html|*.spec|*.mock).js')
             ]
         },
         coverageReporter: {

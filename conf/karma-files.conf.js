@@ -8,7 +8,7 @@ module.exports = function listFiles() {
   });
 
   const patterns = wiredep(wiredepOptions).js.concat([
-    conf.path.tmp('**/*.js'),
+    conf.path.src('**/*.js'),
     conf.path.src('**/*.html')
   ]);
 
