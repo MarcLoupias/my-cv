@@ -40,22 +40,22 @@
 
             it('should set the "Expériences" menu href', function () {
                 var aElem = angular.element(directiveElem.find('a')[1]);
-                expect(aElem.attr('href')).toEqual('#/experiences');
+                expect(aElem.attr('href')).toEqual('#!/experiences');
             });
 
             it('should set the "Compétences" menu href', function () {
                 var aElem = angular.element(directiveElem.find('a')[2]);
-                expect(aElem.attr('href')).toEqual('#/skills');
+                expect(aElem.attr('href')).toEqual('#!/skills');
             });
 
             it('should set the "Formations" menu href', function () {
                 var aElem = angular.element(directiveElem.find('a')[3]);
-                expect(aElem.attr('href')).toEqual('#/education');
+                expect(aElem.attr('href')).toEqual('#!/education');
             });
 
             it('should set the "Devfolio" menu href', function () {
                 var aElem = angular.element(directiveElem.find('a')[4]);
-                expect(aElem.attr('href')).toEqual('#/devfolio');
+                expect(aElem.attr('href')).toEqual('#!/devfolio');
             });
         });
     });

@@ -2,13 +2,13 @@
     "name": "myCv",
     "version": "0.2.0",
     "dependencies": {
-        "angular": "1.5.8",
-        "angular-sanitize": "1.5.8",
-        "angular-route": "1.5.8",
+        "angular": "1.6.0",
+        "angular-sanitize": "1.6.0",
+        "angular-route": "1.6.0",
         "bootstrap": "3.3.7",
         "angular-bootstrap": "2.2.0"
     },
     "devDependencies": {
-        "angular-mocks": "1.5.8"
+        "angular-mocks": "1.6.0"
     }
 }

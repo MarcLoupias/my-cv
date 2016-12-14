@@ -81,7 +81,12 @@
                 expect(dataService.data.degrees).toBeNull();
                 expect(dataService.data.devfolio).toBeNull();
 
-                var promise = dataService.init();
+                dataService.init().catch(function (e) {
+                    expect(e).toBeDefined();
+                    expect(e.status).toEqual(500);
+                    expect(e.data).toEqual('internal server error');
+                });
+
                 $httpBackend.flush();
 
                 expect(dataService.data).toBeDefined();
@@ -90,12 +95,6 @@
                 expect(dataService.data.skillCategories).toBeNull();
                 expect(dataService.data.degrees).toBeNull();
                 expect(dataService.data.devfolio).toBeNull();
-
-                promise.catch(function (e) {
-                    expect(e).toBeDefined();
-                    expect(e.status).toEqual(500);
-                    expect(e.data).toEqual('internal server error');
-                });
             });
         });
     });
