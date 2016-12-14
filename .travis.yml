@@ -7,7 +7,11 @@ before_install:
 install:
   - npm install
   - bower install
-script: npm test
+  - npm --version
+  - bower --version
+before_script:
+  - npm test
+script: npm build
 branches:
   only:
   - master
