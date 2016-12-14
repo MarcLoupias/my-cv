@@ -1,8 +1,20 @@
 # CHANGELOG
 
-## 0.2.0 (2016/11/XX)
+## 0.2.0 (2016/12/XX)
 
+### scaffold
 - changing yeoman generator from [generator-angular](https://github.com/yeoman/generator-angular) to [fountain-webapp](https://github.com/FountainJS/generator-fountain-webapp)
+
+### devops
+- code coverage with [coveralls.io](https://coveralls.io/github/MarcLoupias/my-cv)
+- [Travis CI](https://travis-ci.org/MarcLoupias/my-cv) config
+
+### dependencies
+- [angular](https://angularjs.org/) from `1.2.6` to `1.6.0`
+- [angular-ui](https://angular-ui.github.io/bootstrap/) from `0.10.0` to `2.2.0`
+- [bootstrap](http://getbootstrap.com/) from `3.0.3` to `3.3.7`
+
+### refactoring
 - refactoring folders scaffolding from file type based to feature based.
   Cf [John Papa angular-styleguide Y152](https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y152)
 - refactoring js sources files :
@@ -15,7 +27,6 @@
     - [Feature File Names : Y121](https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y121)
     - [Factory and Service Names : Y125](https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y125)
     - externalize directives templates into separated html files
-- angular-ui from `0.10.0` to `2.2.0`
 - refactoring data calls, controllers impl, add some logs, loader handling
 
 ## 0.1.4 (2014/03/04)
