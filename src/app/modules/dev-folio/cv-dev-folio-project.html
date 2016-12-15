@@ -3,11 +3,11 @@
         <p><strong>{{project.name}}</strong>
             <span class="pull-right">
                 <a ng-href="{{project.deployedProjectUrl}}" title="{{project.deployedProjectUrlTitle}}" target="_blank">
-                    <i class="icon-large icon-link"></i>
+                    <img ng-src="assets/images/icons/glyphicons-51-link.png">
                 </a>
                 <a ng-repeat="repo in project.githubRepoList" ng-href="{{repo.repoUrl}}" title="{{repo.repoUrlTitle}}"
                    target="_blank">
-                    <i class="icon-large icon-github"></i>
+                    <img ng-src="assets/images/icons/glyphicons-social-22-github.png">
                 </a>
             </span>
             <div class="well">

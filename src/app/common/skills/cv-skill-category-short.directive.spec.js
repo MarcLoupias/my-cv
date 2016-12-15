@@ -48,11 +48,10 @@
                 expect(strongElem.text()).toEqual('Environnements');
             });
 
-            it('should should set skill category name block with glyphicon and glyphicon-arrow-down css classes', function () {
-                var iElem = directiveElem.find('i');
-                expect(iElem).toBeDefined();
-                expect(iElem.hasClass('glyphicon')).toBeTruthy();
-                expect(iElem.hasClass('glyphicon-arrow-down')).toBeTruthy();
+            it('should should set skill category name block with img glyphicons-213-arrow-down.png', function () {
+                var imgElem = directiveElem.find('img');
+                expect(imgElem).toBeDefined();
+                expect(imgElem.attr('src')).toEqual('assets/images/icons/glyphicons-213-arrow-down.png');
             });
         });
     });
