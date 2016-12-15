@@ -12,7 +12,7 @@ const hub = new HubRegistry([conf.path.tasks('*.js')]);
 gulp.registry(hub);
 
 gulp.task('inject', gulp.series(gulp.parallel('styles', 'scripts:build'), 'inject'));
-gulp.task('build', gulp.series('clean', 'partials', gulp.parallel('other', 'inject'), 'build'));
+gulp.task('build', gulp.series('clean', 'partials', gulp.parallel('other', 'inject'), 'build', 'heroku'));
 gulp.task('test:local', gulp.series('scripts', 'karma:single-run'));
 gulp.task('test', gulp.series('scripts', 'karma:single-run', 'coveralls'));
 gulp.task('serve', gulp.series('clean', 'inject', 'watch', 'browsersync'));
