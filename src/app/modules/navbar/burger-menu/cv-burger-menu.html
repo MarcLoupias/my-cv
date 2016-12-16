@@ -1,8 +1,8 @@
 <div class="visible-xs">
     <div class="navbar-header">
-        <a class="navbar-brand" ng-href="#!/" ng-click="burgerCtrl.burgerMenuService.collapse()">{{burgerCtrl.title}}</a>
+        <a class="navbar-brand pull-left" ng-href="#!/" ng-click="burgerCtrl.burgerMenuService.collapse()">{{burgerCtrl.title}}</a>
 
-        <button type="button" class="navbar-toggle"
+        <button type="button" class="navbar-toggle pull-right"
                 ng-click="burgerCtrl.burgerMenuService.toggle()"
                 aria-expanded="burgerCtrl.burgerMenuService.isCollapsed()" aria-controls="burger">
             <span class="sr-only">Toggle navigation</span>
@@ -12,7 +12,7 @@
         </button>
     </div>
 
-    <div class="collapse" id="burger" uib-collapse="burgerCtrl.burgerMenuService.isCollapsed()">
+    <div class="container-fluid collapse" id="burger" uib-collapse="burgerCtrl.burgerMenuService.isCollapsed()">
         <ul class="nav navbar-nav">
             <li class="divider"></li>
             <li>
