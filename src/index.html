@@ -19,13 +19,13 @@
     <!-- endbuild -->
 </head>
 
-<body ng-app="app" ng-controller="IndexController as indexCtrl">
+<body data-ng-app="app" data-ng-controller="IndexController as indexCtrl">
 
-<div ng-if="!indexCtrl.loader.isLoadingDone()" class="container">
+<div data-ng-if="!indexCtrl.loader.isLoadingDone()" class="container">
     <div class="row">
         <div class="col-md-12">
             <div>
-                <img ng-src="assets/images/loader.48x48-white.gif" alt="Loading" class="img-rounded center-block">
+                <img data-ng-src="assets/images/loader.48x48-white.gif" alt="Loading" class="img-rounded center-block">
                 <h5 class="text-center">Chargement en cours ... <small>Veuillez patienter</small></h5>
             </div>
         </div>
@@ -33,7 +33,7 @@
 
 </div>
 
-<div ng-if="indexCtrl.loader.isLoadingDone()">
+<div data-ng-if="indexCtrl.loader.isLoadingDone()">
 
     <cv-navbar></cv-navbar>
 
@@ -43,7 +43,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-12" ng-view=""></div>
+            <div class="col-md-12" data-ng-view=""></div>
         </div>
     </div>
 
@@ -54,8 +54,6 @@
     <cv-footer></cv-footer>
 
 </div>
-
-</body>
 
 <!-- build:js({.tmp,src}) scripts/vendor.js -->
 <!-- bower:js -->
@@ -71,5 +69,8 @@
 <!-- angular templates will be automatically converted in js and inserted here -->
 <!-- endinject -->
 <!-- endbuild -->
+
+</body>
+
 </html>
 
