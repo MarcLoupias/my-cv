@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 0.3.2 (2016/12/16)
+
+- layout fixes for burger-menu on mobile viewports
+- w3c validation changes in index.html
+
 ## 0.3.1 (2016/12/16)
 
 - missing conf changes :'(
