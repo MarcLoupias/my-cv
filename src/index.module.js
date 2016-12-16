@@ -3,7 +3,7 @@
 
     angular
         .module('app', [
-            'ngSanitize', 'ngRoute', 'ui.bootstrap',
+            'ngSanitize', 'ngRoute', 'ui.bootstrap', 'angular-google-analytics',
 
             'app.common',
 

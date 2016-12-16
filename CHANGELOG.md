@@ -1,6 +1,15 @@
 # CHANGELOG
 
-## 0.2.0 (2016/12/XX)
+## 0.3.0 (2016/12/16)
+
+### dependencies
+- add [angular-google-analytics](https://github.com/revolunet/angular-google-analytics) `1.1.7`
+
+### Google Analytics
+- tracking on routes only
+- tracking disabled for unit tests and dev mode
+
+## 0.2.0 (2016/12/15)
 
 ### scaffold
 - changing yeoman generator from [generator-angular](https://github.com/yeoman/generator-angular) to [fountain-webapp](https://github.com/FountainJS/generator-fountain-webapp)
