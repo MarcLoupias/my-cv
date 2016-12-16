@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.3.1 (2016/12/16)
+
+- missing conf changes :'(
+
 ## 0.3.0 (2016/12/16)
 
 ### dependencies
