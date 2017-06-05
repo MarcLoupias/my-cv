@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## 0.4.0 (2017/06/05)
+
+### devDependencies
+- upgrade gulp to v4 (branch not released yet)
+- upgrade gulp-hub to branch registry-init
+
+### environnement
+- upgrade node to v6
+- upgrade npm to v5+
+- fixed shrinkwrap breaking change due to npm upgrade
+
+### devops
+- updating travis config
+
+### data
+- gitbook memo-dev project added to devfolio section
+- age ;)
+
 ## 0.3.2 (2016/12/16)
 
 - layout fixes for burger-menu on mobile viewports
