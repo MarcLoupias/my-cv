@@ -305,6 +305,30 @@
             "environment": [
                 {"name":"GIT"},{"name":"Yeoman"},{"name":"Grunt"},{"name":"Bower"}
             ]
+        },
+        {
+            "name":"memo-dev",
+            "deployedProjectUrl":"https://marcloupias.gitbooks.io/memo-dev/content/",
+            "deployedProjectUrlTitle":"visiter la version déployée",
+            "githubRepoList": [
+                {"repoUrl":"https://github.com/MarcLoupias/memo-dev", "repoUrlTitle":"code source du site"}
+            ],
+            "description":[
+                {"p":"Un gitbook servant de base de connaissance."},
+                {"p":"Le repo github est synchronisé avec le repo gitbook."},
+                {"p":"Lorsqu'une modification est effectuée ou push sur le repo github, il push automatiquement vers le repo gitbook."},
+                {"p":"Le repo gitbook déploie automatiquement la nouvelle version du gitbook."},
+                {"p":"Un plugin gitbook permet d'effectuer une recherche fulltext sur l'ensemble des markdowns du site."}
+            ],
+            "technos":[
+                {"name":"Gitbook"},{"name":"Github"}
+            ],
+            "languages":[
+                {"name":"Markdown"}
+            ],
+            "environment": [
+                {"name":"GIT"}
+            ]
         }
     ]
 }
