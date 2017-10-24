@@ -2,7 +2,7 @@
     <div class="navbar-header">
         <a class="navbar-brand pull-left" ng-href="#!/" ng-click="burgerCtrl.burgerMenuService.collapse()">{{burgerCtrl.title}}</a>
 
-        <button type="button" class="navbar-toggle pull-right"
+        <button id="btn-burger-menu-id" type="button" class="navbar-toggle pull-right"
                 ng-click="burgerCtrl.burgerMenuService.toggle()"
                 aria-expanded="burgerCtrl.burgerMenuService.isCollapsed()" aria-controls="burger">
             <span class="sr-only">Toggle navigation</span>
@@ -16,19 +16,19 @@
         <ul class="nav navbar-nav">
             <li class="divider"></li>
             <li>
-                <a ng-href="#!/experiences" ng-click="burgerCtrl.burgerMenuService.collapse()"><b>Expériences</b></a>
+                <a id="burger-menu-item-experiences" ng-href="#!/experiences" ng-click="burgerCtrl.burgerMenuService.collapse()"><b>Expériences</b></a>
             </li>
             <li class="divider"></li>
             <li>
-                <a ng-href="#!/skills" ng-click="burgerCtrl.burgerMenuService.collapse()"><b>Compétences</b></a>
+                <a id="burger-menu-item-skills" ng-href="#!/skills" ng-click="burgerCtrl.burgerMenuService.collapse()"><b>Compétences</b></a>
             </li>
             <li class="divider"></li>
             <li>
-                <a ng-href="#!/education" ng-click="burgerCtrl.burgerMenuService.collapse()"><b>Formations</b></a>
+                <a id="burger-menu-item-education" ng-href="#!/education" ng-click="burgerCtrl.burgerMenuService.collapse()"><b>Formations</b></a>
             </li>
             <li class="divider"></li>
             <li>
-                <a ng-href="#!/devfolio" ng-click="burgerCtrl.burgerMenuService.collapse()"><b>Devfolio</b></a>
+                <a id="burger-menu-item-devfolio" ng-href="#!/devfolio" ng-click="burgerCtrl.burgerMenuService.collapse()"><b>Devfolio</b></a>
             </li>
             <li class="divider"></li>
         </ul>

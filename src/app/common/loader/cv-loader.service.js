@@ -8,7 +8,7 @@
     function loaderService() {
         var instance = {
             data: {
-                done: true
+                done: false
             },
             isLoadingDone: isLoadingDone,
             start: start,

@@ -4,6 +4,7 @@
 [![WTFPL](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png)](http://wtfpl.net)
 [![Build Status](https://travis-ci.org/MarcLoupias/my-cv.svg?branch=master)](https://travis-ci.org/MarcLoupias/my-cv)
 [![Coverage Status](https://coveralls.io/repos/github/MarcLoupias/my-cv/badge.svg?branch=master)](https://coveralls.io/github/MarcLoupias/my-cv?branch=master)
+[![Cypress.io tests](https://img.shields.io/badge/cypress.io-tests-green.svg?style=flat-square)](https://cypress.io)
 
 Published @ http://cv.marc-loupias.fr
 
