@@ -1,4 +1,9 @@
 describe('Testing the main menu', function () {
+    beforeEach(function() {
+        cy.server();
+        cy.route('GET', /assets\/json/, 'fixture:mocked-data.json');
+    });
+
     context('using a small device (phone) <768 in portrait', function() {
         beforeEach(function () {
             cy.viewport(300, 500);
