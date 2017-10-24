@@ -4,7 +4,7 @@ describe('Testing the home view', function () {
             cy.server();
             cy.route('GET', /assets\/json/, 'fixture:mocked-data.json');
             cy.viewport(1920, 1280);
-            cy.visit('http://localhost:3000');
+            cy.visit('/');
         });
 
         testDesktopHomeView();

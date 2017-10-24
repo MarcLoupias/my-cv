@@ -7,7 +7,7 @@ describe('Testing the main menu', function () {
     context('using a small device (phone) <768 in portrait', function() {
         beforeEach(function () {
             cy.viewport(300, 500);
-            cy.visit('http://localhost:3000');
+            cy.visit('/');
         });
 
         testMobileBurgerMenu();
@@ -16,7 +16,7 @@ describe('Testing the main menu', function () {
     context('using a small device (phone) <768 in landscape', function() {
         beforeEach(function () {
             cy.viewport(500, 300);
-            cy.visit('http://localhost:3000');
+            cy.visit('/');
         });
 
         testMobileBurgerMenu();
@@ -25,7 +25,7 @@ describe('Testing the main menu', function () {
     context('using a small device (tablet) 768x1024 in portrait', function() {
         beforeEach(function () {
             cy.viewport(768, 1024);
-            cy.visit('http://localhost:3000');
+            cy.visit('/');
         });
 
         testDesktopMainMenu();
@@ -34,7 +34,7 @@ describe('Testing the main menu', function () {
     context('using a small device (tablet) 1024x768 in landscape', function() {
         beforeEach(function () {
             cy.viewport(1024, 768);
-            cy.visit('http://localhost:3000');
+            cy.visit('/');
         });
 
         testDesktopMainMenu();
@@ -43,7 +43,7 @@ describe('Testing the main menu', function () {
     context('using a medium device (desktop) 1280x800', function() {
         beforeEach(function () {
             cy.viewport(1280, 800);
-            cy.visit('http://localhost:3000');
+            cy.visit('/');
         });
 
         testDesktopMainMenu();
@@ -52,7 +52,7 @@ describe('Testing the main menu', function () {
     context('using a large device (desktop) 1920x1280', function() {
         beforeEach(function () {
             cy.viewport(1920, 1280);
-            cy.visit('http://localhost:3000');
+            cy.visit('/');
         });
 
         testDesktopMainMenu();
@@ -60,8 +60,6 @@ describe('Testing the main menu', function () {
 
     function testMobileBurgerMenu() {
         it('should render a working burger menu', function() {
-            cy.visit('http://localhost:3000');
-
             cy
                 .get('#btn-burger-menu-id')
                 .as('burgerMenu')
@@ -108,8 +106,6 @@ describe('Testing the main menu', function () {
 
     function testDesktopMainMenu() {
         it('should render a working desktop menu', function() {
-            cy.visit('http://localhost:3000');
-
             cy
                 .get('#desktop-menu-item-experiences')
                 .click();
