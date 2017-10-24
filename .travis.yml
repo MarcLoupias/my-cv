@@ -11,7 +11,7 @@ install:
   - bower --version
 before_script:
   - npm test
-  - npm e2e-headless
+  - npm run e2e-headless
 script: npm build
 branches:
   only:
