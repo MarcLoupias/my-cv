@@ -1,4 +1,4 @@
 {
     "defaultCommandTimeout": 5000,
-    "videoRecording": false
+    "videoRecording": true
 }
