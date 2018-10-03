@@ -1,0 +1,386 @@
+{
+    "basics": {
+        "name": "Marc Loupias",
+        "label": "Développeur d'applications web (JavaScript Full Stack)",
+        "picture": "",
+        "email": "pro@marc-loupias.fr",
+        "website": "http://cv.marc-loupias.fr",
+        "summary": "Après une expérience significative chez un éditeur de logiciel, j'ai décidé en 2011 de changer de technologie en passant du client lourd au développement web. Installé durablement en région parisienne, je cherche à perfectionner mes connaissances sur les dernières technologies web et les pratiques devops. Ces dernières années, j'ai particulièrement été marqué par ces évolutions, ainsi que par l'agile et le mouvement Software Craftmanship. Je souhaite m'inscrire dans ce mouvement.",
+        "birth": {
+            "place": "Figeac (Lot)",
+            "state": "France",
+            "date": "1981"
+        },
+        "location": {
+            "city": "Paris",
+            "countryCode": "FR"
+        },
+        "profiles": [
+            {
+                "network": "GitHub",
+                "username": "Profil GitHub",
+                "url": "https://github.com/MarcLoupias"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "Profil LinkedIn",
+                "url": "https://fr.linkedin.com/in/marc-loupias-4aa71491"
+            }
+        ]
+    },
+    "skills": [
+        {
+            "name": "Langages du web",
+            "level": "advanced",
+            "levelDisplay": "Avancé",
+            "keywords": [
+                "HTML", "CSS", "JavaScript", "TypeScript"
+            ]
+        },
+        {
+            "name": "Plateformes, frameworks et bibliothèques web",
+            "level": "advanced",
+            "levelDisplay": "Avancé",
+            "keywords": [
+                "Node.js", "Express", "AngularJS", "Angular", "Vue", "Lodash"
+            ]
+        },
+        {
+            "name": "Outils web",
+            "level": "advanced",
+            "levelDisplay": "Avancé",
+            "keywords": [
+                "npm", "grunt", "gulp", "Webpack", "ESLint", "Husky"
+            ]
+        },
+        {
+            "name": "Testing web",
+            "level": "advanced",
+            "levelDisplay": "Avancé",
+            "keywords": [
+                "Mocha", "Jasmine", "Cypress", "Selenium"
+            ]
+        },
+        {
+            "name": "Réseaux",
+            "level": "intermediate",
+            "levelDisplay": "Intermédiaire",
+            "keywords": [
+                "TCP", "UDP", "IP", "http", "dns", "ftp", "smtp", "pop3", "imap"
+            ]
+        },
+        {
+            "name": "Bases de données",
+            "level": "intermediate",
+            "levelDisplay": "Intermédiaire",
+            "keywords": [
+                "Modèle relationnel", "SQL", "Merise"
+            ]
+        },
+        {
+            "name": "Contrôle de version",
+            "level": "master",
+            "levelDisplay": "Maîtrise",
+            "keywords": [
+                "git", "gitflow", "github flow", "trunk based dev", "semver", "GitHub", "GitLab"
+            ]
+        },
+        {
+            "name": "DevOps",
+            "level": "intermediate",
+            "levelDisplay": "Intermédiaire",
+            "keywords": [
+                "Pratiques DevOps", "Continuous Integration", "Continuous Delivery", "Continuous Deployment", "Jenkins", "xldeploy", "travis ci"
+            ]
+        },
+        {
+            "name": "Méthodologies et pratiques",
+            "level": "advanced",
+            "levelDisplay": "Avancé",
+            "keywords": [
+                "La RACHE", "Waterfall", "Cycle en V", "Agile (SCRUM)"
+            ]
+        },
+        {
+            "name": "Sécurité",
+            "level": "intermediate",
+            "levelDisplay": "Intermédiaire",
+            "keywords": [
+                "PKI X.509", "TLS", "OWASP", "S/MIME", "Signature électronique", "MOOC ANSSI"
+            ]
+        }
+    ],
+    "work": [
+        {
+            "company": "Banque de France",
+            "position": "Tech lead Frontend",
+            "website": "https://www.banque-france.fr/",
+            "startDate": "2015-06-15",
+            "endDate": "2018-09-28",
+            "summary": "Tech lead Frontend en régie en accompagnement d'un Centre de Service en nearshore (Lille) et conseil de l'équipe projet.",
+            "highlights": [
+                "Programme FIBRE : Scaffold du projet frontend (2015) (AngularJS, angular-material, gulp, npm, Jasmine, svn puis git).",
+                "Programme FIBRE : Rédaction de documents de normes et d'aide au développement.",
+                "Programme FIBRE : Conseil et qualification sur la rédaction des spécifications techniques.",
+                "Programme FIBRE : Revues de code, qualification et accompagnement des développements du centre de service.",
+                "Programme FIBRE : Gestion de diverses problématiques techniques (OAuth2, performances, analyses bugs, gestion de la codebase)",
+                "Programme FIBRE : Mise à niveau de la stack technique front dans la mesure du possible (dette technique, ESLint, tests)",
+                "Projet Espace Entreprise : Tech lead opérationnel (AngularJS, Bootstrap, gulp, npm, Jasmine, git).",
+                "Projet Espace Entreprise : Encadrement de deux développeurs frontend juniors.",
+                "Projet interne de gestion des environnements : Développement en solo du frontend avec le DevOps en solo pour le backend (TypeScript, AngularJS, Bootstrap, npm, webpack, Jasmine, Cypress, git)"
+            ],
+            "keywords": [
+                "Web", "JavaScript", "HTML", "css", "oAuth2", "git", "gitlab", "devops", "jenkins", "xldeploy", "JIRA", "scrum"
+            ],
+            "location": {
+                "city": "Paris",
+                "countryCode": "FR",
+                "region": "France"
+            }
+        },
+        {
+            "company": "Pages Jaunes",
+            "position": "Consultant AngularJS",
+            "website": "https://www.pagesjaunes.fr/",
+            "startDate": "2014-04-15",
+            "endDate": "2015-06-14",
+            "summary": "Développement et maintenance sur la refonte de l'application web mobile responsive (site à fort trafic).",
+            "highlights": [
+                "Développement et maintenance sur la partie Javascript de la webapp. (AngularJS, RequireJS, npm, bower, grunt, git).",
+                "Migration d'un fork de cette webapp à Cordova sur Android.",
+                "Sprints de deux semaines : scrum quotidien, planning meetings, retros.",
+                "Revues de code bilatérales."
+            ],
+            "keywords": [
+                "Web", "JavaScript", "HTML", "css", "git", "gitlab", "JIRA", "scrum", "cordova"
+            ],
+            "location": {
+                "city": "Sèvres (92)",
+                "countryCode": "FR",
+                "region": "France"
+            }
+        },
+        {
+            "company": "BK-Consulting",
+            "position": "Consultant Java/J2EE web",
+            "website": "http://bk-consulting.com/",
+            "startDate": "2013-05-01",
+            "endDate": "2013-11-30",
+            "summary": "Développement de deux applications web au forfait en mode agile (SCRUM) dans le domaine de l'hotellerie.",
+            "highlights": [
+                "Développement en Java et SQL des serveurs d'applications (Play!, MySQL, git).",
+                "Développement du frontend (AngularJS, Bootstrap, git).",
+                "Sprints de deux semaines : scrum quotidien, planning meetings, retros.",
+                "Revues de code bilatérales."
+            ],
+            "keywords": [
+                "Web", "JavaScript", "HTML", "css", "java", "play framework", "git", "TeamCity", "MySQL", "scrum"
+            ],
+            "location": {
+                "city": "Paris",
+                "countryCode": "FR",
+                "region": "France"
+            }
+        },
+        {
+            "company": "Scaled Risk",
+            "position": "Ingénieur logiciel",
+            "website": "http://www.scaledrisk.com/",
+            "startDate": "2012-11-01",
+            "endDate": "2012-01-30",
+            "summary": "Développement des web services et du frontend d'une solution Big Data.",
+            "highlights": [
+                "Couche services (Java, Apache Thrift).",
+                "Couche web (intranet) (RIA : HTML5, CSS2, Javascript)."
+            ],
+            "keywords": [
+                "Web", "JavaScript", "HTML", "css", "java", "git", "GitHub"
+            ],
+            "location": {
+                "city": "Paris",
+                "countryCode": "FR",
+                "region": "France"
+            }
+        },
+        {
+            "company": "LOMACO Informatique",
+            "position": "Analyste-programmeur",
+            "website": "http://www.lomaco.fr",
+            "startDate": "2006-04-01",
+            "endDate": "2011-04-30",
+            "summary": "Programmeur, service logiciels de gestion et spécifiques puis, Analyste-Programmeur service logiciels sanitaires.",
+            "highlights": [
+                "Recueil des besoins avec le client ou la MOA (A distance ou sur site).",
+                "Rédaction de documentation technique à destination des développeurs.",
+                "Développement des produits et modifications demandés.",
+                "Encadrement auprès des développeurs.",
+                "Tests internes.",
+                "Déploiement et tests pré-production (A distance ou sur site).",
+                "Formation des utilisateurs (Sur site).",
+                "Support de niveau 3 (A distance ou sur site)."
+            ],
+            "keywords": [
+                "Client lourd", "Windev", "Java", "C#", "HTML", "css", "svn", "MySQL", "HyperFileSQL"
+            ],
+            "location": {
+                "city": "Figeac (Lot)",
+                "countryCode": "FR",
+                "region": "France"
+            }
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "Developpez.com",
+            "position": "Modérateur",
+            "website": "https://www.developpez.com/",
+            "startDate": "2018-01-01",
+            "summary": "Modération des forums, rédaction d'actualités, relectures techniques d'articles avant publication.",
+            "highlights": [
+                "Chroniqueur très actif (1er semestre 2018)"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "AFPA, Beaumont (63)",
+            "area": "Développement logiciel",
+            "studyType": "Concepteur-Développeur (en VAE)",
+            "startDate": "2011-11-01",
+            "endDate": "2011-11-01",
+            "courses": [
+                "UML 2.0",
+                "SQL",
+                "POO, Design Pattern du GoF",
+                "Java6"
+            ]
+        },
+        {
+            "institution": "AFPA, Béziers (34)",
+            "area": "Développement logiciel",
+            "studyType": "Développeur informatique",
+            "startDate": "2005-04-01",
+            "endDate": "2006-03-31",
+            "courses": [
+                "Merise",
+                "UML 1.1",
+                "SQL, TransactSQL",
+                ".NET 1.1, Visual Basic",
+                "Java5",
+                "HTML, CSS, Javascript"
+            ]
+        }
+    ],
+    "publications": [
+        {
+            "name": "memo-dev",
+            "publisher": "GitBook",
+            "releaseDate": "2013-01-01",
+            "website": "https://marcloupias.gitbooks.io/memo-dev/content/",
+            "summary": "Un dépôt git pour conserver mes notes qui est devenu par la suite un GitBook servant de base de connaissance. Utilisation quasi-quotidienne. Recherche fulltext dans mes notes.",
+            "keywords": [
+                "git",
+                "base de connaissance",
+                "markdown"
+            ]
+        },
+        {
+            "name": "Thème developpez.com pour les jsonresume",
+            "publisher": "npm",
+            "releaseDate": "2018-10-07",
+            "website": "https://github.com/MarcLoupias/jsonresume-theme-developpez",
+            "summary": "Un thème en français pour la génération de CV basée sur l'écosystème jsonresume.",
+            "keywords": [
+                "CV",
+                "jsonresume",
+                "JavaScript"
+            ]
+        },
+        {
+            "name": "News : Les cinq étapes de l'évolution DevOps identifiées par le state of devops 2018,",
+            "publisher": "Developpez.com",
+            "releaseDate": "2018-09-14",
+            "website": "https://alm.developpez.com/actu/224180/Les-cinq-etapes-de-l-evolution-DevOps-identifiees-par-le-state-of-devops-2018-presentees-par-Puppet-et-Splunk/"
+        },
+        {
+            "name": "News : The State Of JavaScript : participez à l'édition 2018 de l'enquête",
+            "publisher": "Developpez.com",
+            "releaseDate": "2018-09-11",
+            "website": "https://www.developpez.com/actu/223416/The-State-Of-JavaScript-participez-a-l-edition-2018-de-l-enquete-qui-permet-d-avoir-une-vue-macro-des-technologies-utilisees-dans-le-monde-JS/"
+        },
+        {
+            "name": "News : npm : l'authentification à deux facteurs rendue obligatoire en bêta",
+            "publisher": "Developpez.com",
+            "releaseDate": "2018-07-16",
+            "website": "https://www.developpez.com/actu/215044/npm-l-authentification-a-deux-facteurs-rendue-obligatoire-en-beta-pour-les-mainteneurs-sur-les-paquets-indiques-comme-proteges/"
+        },
+        {
+            "name": "News : npm : la version 6.2.0 du gestionnaire de paquets officiel de Node.js passe en @latest",
+            "publisher": "Developpez.com",
+            "releaseDate": "2018-07-16",
+            "website": "https://www.developpez.com/actu/215024/npm-la-version-6-2-0-du-gestionnaire-de-paquets-officiel-de-Node-js-passe-en-latest-avec-quatre-nouveautes-d-importance-autour/"
+        },
+        {
+            "name": "News : JSConf Berlin 2018 - Ryan Dahl liste 10 erreurs de conception sur Node.js et dévoile son prototype deno",
+            "publisher": "Developpez.com",
+            "releaseDate": "2018-06-11",
+            "website": "https://javascript.developpez.com/actu/208637/JSConf-Berlin-2018-moins-Ryan-Dahl-liste-10-erreurs-de-conception-sur-Node-js-et-devoile-son-prototype-deno/"
+        },
+        {
+            "name": "News : Publication de la v2.17.1 de Git qui corrige une vulnérabilité sévère permettant l'exécution d'un code arbitraire lors du clone d'un dépôt malicieux",
+            "publisher": "Developpez.com",
+            "releaseDate": "2018-05-31",
+            "website": "https://www.developpez.com/actu/206812/Publication-de-la-v2-17-1-de-Git-qui-corrige-une-vulnerabilite-severe-permettant-l-execution-d-un-code-arbitraire-lors-du-clone-d-un-depot-malicieux/"
+        },
+        {
+            "name": "News : npm : la version 6.0.1 du gestionnaire de paquets officiel de Node.js. passe en @latest",
+            "publisher": "Developpez.com",
+            "releaseDate": "2018-05-10",
+            "website": "https://www.developpez.com/actu/203081/npm-la-version-6-0-1-du-gestionnaire-de-paquets-officiel-de-Node-js-passe-en-latest-la-commande-npm-audit-est-desormais-fonctionnelle/"
+        },
+        {
+            "name": "News : npm 6.0.0, le gestionnaire de paquets officiel de Node.js. passe en @latest",
+            "publisher": "Developpez.com",
+            "releaseDate": "2018-04-26",
+            "website": "https://www.developpez.com/actu/200282/npm-6-0-0-le-gestionnaire-de-paquets-officiel-de-Node-js-passe-en-latest-et-se-concentre-desormais-sur-la-securite/"
+        },
+        {
+            "name": "News : Suivi des linters JavaScript, outils d'analyse statique de code source",
+            "publisher": "Developpez.com",
+            "releaseDate": "2018-03-17",
+            "website": "https://www.developpez.com/actu/193978/Suivi-des-linters-JavaScript-outils-d-analyse-statique-de-code-source-ESLint-en-4-19-0-et-standardJS-en-11-0-0/"
+        },
+        {
+            "name": "News : GitHub publie un nouvel outil nommé git-sizer afin d'aider les mainteneurs à optimiser leurs dépôts",
+            "publisher": "Developpez.com",
+            "releaseDate": "2018-03-11",
+            "website": "https://www.developpez.com/actu/192311/GitHub-publie-un-nouvel-outil-nomme-git-sizer-afin-d-aider-les-mainteneurs-a-optimiser-leurs-depots/"
+        },
+        {
+            "name": "News : Webpack en version 4 est maintenant disponible",
+            "publisher": "Developpez.com",
+            "releaseDate": "2018-02-25",
+            "website": "https://www.developpez.com/actu/190153/JavaScript-Webpack-en-version-4-est-maintenant-disponible-et-focus-est-fait-sur-le-zero-configuration/"
+        },
+        {
+            "name": "News : npm en version 5.7.0 est maintenant disponible",
+            "publisher": "Developpez.com",
+            "releaseDate": "2018-02-23",
+            "website": "https://javascript.developpez.com/actu/189614/npm-en-version-5-7-0-est-maintenant-disponible-l-alignement-vers-les-pratiques-DevOps-se-poursuit/"
+        },
+        {
+            "name": "News : AngularJS 1.7 annoncé avec la mise en LTS du framework",
+            "publisher": "Developpez.com",
+            "releaseDate": "2018-02-20",
+            "website": "https://javascript.developpez.com/actu/189024/AngularJS-1-7-annonce-avec-la-mise-en-LTS-du-framework-periode-qui-va-s-achever-dans-3-ans-et-demi/"
+        }
+    ],
+    "languages": [
+        {
+            "language": "Français", "fluency": "master", "fluencyDisplay": "Langue natale"
+        },
+        {
+            "language": "Anglais", "fluency": "advanced", "fluencyDisplay": "Bonnes lecture, écriture, et compréhension orale. Manque de pratique en expression orale."
+        }
+    ]
+}

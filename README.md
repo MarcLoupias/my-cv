@@ -3,14 +3,12 @@
 
 [![WTFPL](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png)](http://wtfpl.net)
 [![Build Status](https://travis-ci.org/MarcLoupias/my-cv.svg?branch=master)](https://travis-ci.org/MarcLoupias/my-cv)
-[![Coverage Status](https://coveralls.io/repos/github/MarcLoupias/my-cv/badge.svg?branch=master)](https://coveralls.io/github/MarcLoupias/my-cv?branch=master)
-[![Cypress.io tests](https://img.shields.io/badge/cypress.io-tests-green.svg?style=flat-square)](https://cypress.io)
 
 Published @ http://cv.marc-loupias.fr
 
 ## scaffold
 
-It uses [fountain-webapp](https://github.com/FountainJS/generator-fountain-webapp)
+It uses [jsonresume](https://jsonresume.org) with [jsonresume-theme-developpez](https://github.com/MarcLoupias/jsonresume-theme-developpez).
 
 ## i18n
 
@@ -18,22 +16,16 @@ It is a french résumé.
 
 ## data
 
-Data in the website are provided by `src/assets/json/data.json` file.
+Data in the website are provided by `resume.json` file based on [the related json schema](https://jsonresume.org/schema/).
 
 ## usage
 
-Install dev dependencies
-`npm install`
+Installation : `npm install`
 
-Install project dependencies
-`bower install`
+Test the json file against the jsonresume schema : `npm test`
 
-Run in dev mode
-`gulp serve`
+Build the website : `npm run-script build`
 
-Test
-`gulp test`
+Test the build manually : `npm run-script check-build`
 
-Build
-`gulp build`
-
+Build a pdf version of the website : `npm run-script build-pdf`

@@ -2,18 +2,14 @@ language: node_js
 node_js:
   - 6
 before_install:
-  - npm install -g npm@5.5.1
-  - npm install -g bower@1.8.0
+  - npm install -g npm@6.4.1
 install:
   - npm install
-  - bower install
   - npm --version
-  - bower --version
 before_script:
   - npm test
 script:
   - npm run-script build
-  - npm run-script test-e2e
 branches:
   only:
   - master

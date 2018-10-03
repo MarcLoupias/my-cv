@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.0.0 (2018/10/08)
+
+- old AngularJS webapp removed
+- replaced by [jsonresume.org](https://jsonresume.org) based website with [jsonresume-theme-developpez](https://github.com/MarcLoupias/jsonresume-theme-developpez) theme
+- resume data update
+
 ## 0.4.0 (2017/06/05)
 
 ### devDependencies
