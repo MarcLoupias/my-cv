@@ -11,7 +11,7 @@
     },
     "devDependencies": {
         "http-server": "^0.11.1",
-        "jsonresume-theme-developpez": "1.1.1",
+        "jsonresume-theme-developpez": "^1.1.2",
         "resume-cli": "https://github.com/jsonresume/resume-cli/#5aaf9b8d610e8b4a1e259048e3c58d2630a60da3"
     },
     "scripts": {
